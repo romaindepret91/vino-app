@@ -1,0 +1,89 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+.NavBottom,
+.MuiBottomNavigation-root {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #6a3352 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    height: 8vh !important;
+
+    .MuiBottomNavigationAction-root,
+    .navIcon {
+        color: #ffe599;
+        font-size: 1.7rem !important;
+    }
+
+    .MuiBottomNavigationAction-label {
+        color: #ffe599;
+    }
+
+    button:hover,
+    button:active {
+        .MuiBottomNavigationAction-label,
+        .navIcon {
+            color: #c07a71;
+        }
+    }
+
+    .MuiSpeedDial-root {
+        position: absolute;
+        bottom: 5vh;
+
+        .svg-inline--fa {
+            font-size: 8vw;
+            color: white;
+        }
+
+        .MuiFab-root {
+            background-color: #c07a71;
+        }
+
+        .MuiBackdrop-root {
+            z-index: 100;
+        }
+
+        .fa-wine-bottle {
+            transform: rotate(-45deg);
+        }
+
+        #Ajouter-actions {
+            display: flex;
+            flex-direction: row;
+            gap: 20vw;
+            padding-bottom: 10px;
+        }
+
+        .MuiSpeedDial-fab:hover {
+            background-color: #c07a71;
+        }
+
+        .MuiSpeedDialAction-fab {
+            height: 56px;
+            width: 56px;
+        }
+
+        .MuiSpeedDialAction-staticTooltip,
+        .MuiSpeedDialAction-staticTooltip,
+        .MuiSpeedDialAction-staticTooltipClosed,
+        .MuiSpeedDialAction-staticTooltipLabel {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            border: none !important;
+            box-shadow: none;
+            background-color: transparent;
+            color: white;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+            max-width: 50px;
+        }
+    }
+}

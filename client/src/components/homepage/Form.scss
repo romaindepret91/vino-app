@@ -1,0 +1,59 @@
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 75%;
+    color: #ffe599 !important;
+    border-color: #ffe599 !important;
+    background-color: transparent !important;
+
+    .MuiOutlinedInput-root {
+        background-color: transparent !important;
+        border-color: #ffe599 !important;
+        border: 1px solid #ffe599;
+        border-radius: 24px;
+        color: #ffe599 !important;
+        background-color: transparent;
+
+    }
+
+    .Mui-focused {
+        color: #ffe599 !important;
+    }
+
+    .MuiInputBase-input {
+        background-color: transparent;
+    }
+
+    .MuiInputLabel-root {
+        color: #ffe599;
+        opacity: 50%;
+        font-family: "Open Sans", sans-serif;
+        padding-bottom: 10px;
+        line-height: 1em;
+    }
+
+    .MuiOutlinedInput-root {
+        color: #ffe599;
+    }
+
+    .valider {
+        margin: 20px;
+        width: 75%;
+        font-weight: bold;
+        background-color: #ffe599 !important;
+        color: #6a3352 !important;
+        margin: 10px 0 8px 0;
+        letter-spacing: 0.2em;
+        border-radius: 24px;
+    }
+
+    a {
+        font-size: small !important;
+    }
+
+    span {
+        text-decoration: underline;
+    }
+}

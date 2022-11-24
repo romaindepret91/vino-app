@@ -1,0 +1,214 @@
+.Carte-une-bouteille {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+
+  .actions {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgba(192, 122, 113, 0.3);
+    padding: 1.5vh 0;
+
+    .MuiButton-root {
+      border-radius: none !important;
+      color: #6a3352;
+      span {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    padding-top: 4vh;
+
+    p {
+      text-align: center;
+    }
+
+    .background {
+      position: absolute;
+      top: 27vh;
+      max-height: 40vh;
+    }
+
+    .blanc {
+      circle {
+        fill: #ffe599;
+        opacity: 30%;
+      }
+    }
+
+    .rouge {
+      circle {
+        fill: #6a3352;
+        opacity: 10%;
+      }
+    }
+
+    .rose {
+      circle {
+        fill: #c07a71;
+        opacity: 10%;
+      }
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 30vw 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      justify-items: center;
+      justify-content: center;
+      align-items: start;
+      min-width: 90vw;
+      max-height: 60vh;
+      padding-top: 2vh;
+    }
+
+    .bouteille-img {
+      grid-column: 2 / 2;
+      grid-row: 1 / 4;
+      display: flex;
+      max-height: 40vh;
+    }
+
+    img {
+      max-height: 35vh;
+      z-index: 10;
+    }
+
+    .quantity {
+      font-size: 1em;
+    }
+
+    .circle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #6a3352;
+      width: 4.5em;
+      height: 4em;
+      margin-bottom: 2vh;
+
+      h3 {
+        font-size: 1em;
+      }
+    }
+
+    .nom {
+      width: 80%;
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+
+    strong {
+      font-size: 1em;
+      line-height: 1em;
+    }
+
+    .nom,
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      text-align: center;
+      color: #6a3352;
+      z-index: 10;
+    }
+
+    .icon {
+      padding-bottom: 1vh;
+
+      .MuiSvgIcon-root,
+      .svg-inline--fa,
+      h3 {
+        font-weight: bold;
+        font-size: 1.6em;
+        text-transform: none;
+      }
+    }
+
+    .quantity {
+      grid-column: 2 / 3;
+      grid-row: 4;
+      margin-bottom: 1vh;
+    }
+
+    h3 {
+      line-height: normal;
+    }
+
+    .couleur {
+      position: relative;
+      width: 100%;
+
+      .MuiSvgIcon-root {
+        position: absolute;
+        z-index: 0;
+        opacity: 15%;
+      }
+
+      .Rouge {
+        .MuiSvgIcon-root {
+          color: #6a3352 !important;
+        }
+      }
+
+      .Blanc {
+        .MuiSvgIcon-root {
+          color: #ffe599 !important;
+        }
+      }
+
+      .Rose {
+        .MuiSvgIcon-root {
+          color: #c07a71 !important;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none !important;
+      color: white;
+    }
+
+    .MuiButton-root {
+      border-radius: none !important;
+      color: white;
+    }
+
+    .MuiButtonGroup-grouped {
+      min-width: 25vw !important;
+    }
+
+    .MuiButtonGroup-grouped:not(:last-of-type) {
+      border-right: 1px solid white !important;
+    }
+
+    .MuiButtonGroup-root {
+      grid-column: 2 / 3;
+      grid-row: 5;
+      background-color: #c07a71;
+      padding: 5px 10px !important;
+      border-radius: 25px !important;
+      -webkit-box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%),
+        0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+      box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%),
+        0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+      z-index: 10;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.Dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 17vh;
+    padding-bottom: 14vh;
+
+    .back {
+        position: absolute;
+        top: 16vh;
+        left: 5vw;
+    }
+
+    .Recherche {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px !important;
+        background-color: rgb(192 122 113 / 22%);
+
+        input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background-color: rgba(192, 122, 113, 0);
+        }
+
+        ::placeholder {
+            font-size: 1.5em;
+            padding-left: 20px;
+            color: rgb(192 122 113 / 50%);
+            font-family: "Open Sans", sans-serif;
+            text-align: left;
+        }
+
+        .MuiSvgIcon-root {
+            font-size: 2.8rem;
+            color: #6a3352;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.accueil {
+    display: flex;
+    flex-direction: column;
+
+    .login,
+    .signup {
+        margin: 10px;
+        width: 225px;
+        font-weight: bold;
+    }
+
+    .login {
+        background-color: #ffe599;
+        color: #6a3352;
+    }
+
+    .signup {
+        border: 2px solid #ffe599;
+        color: #ffe599;
+        background-color: transparent;
+    }
+
+    a {
+        letter-spacing: 0.2em;
+    }
+}

@@ -1,0 +1,1366 @@
+{
+  error: Error: FATAL ERROR: jwtPrivateKey is not defined
+      at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+      at node:internal/main/run_main_module:17:47,
+  level: 'error',
+  message: 'uncaughtException: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  stack: 'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  exception: true,
+  date: 'Fri Nov 18 2022 17:05:46 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 8690,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 81596416,
+      heapTotal: 58572800,
+      heapUsed: 38945488,
+      external: 24032317,
+      arrayBuffers: 19816021
+    }
+  },
+  os: { loadavg: [ 2.75, 2.75146484375, 2.57861328125 ], uptime: 29055 },
+  trace: [
+    {
+      column: 11,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js',
+      function: 'module.exports',
+      line: 7,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 28,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js',
+      function: null,
+      line: 8,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 47,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 17,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-11-18T22:05:46.191Z'
+}
+{
+  error: Error: FATAL ERROR: jwtPrivateKey is not defined
+      at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+      at node:internal/main/run_main_module:17:47,
+  level: 'error',
+  message: 'uncaughtException: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  stack: 'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  exception: true,
+  date: 'Fri Nov 18 2022 17:07:54 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 8747,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 81080320,
+      heapTotal: 58572800,
+      heapUsed: 38939408,
+      external: 23336874,
+      arrayBuffers: 19807874
+    }
+  },
+  os: {
+    loadavg: [ 3.353515625, 2.91845703125, 2.66259765625 ],
+    uptime: 29183
+  },
+  trace: [
+    {
+      column: 11,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js',
+      function: 'module.exports',
+      line: 7,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 28,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js',
+      function: null,
+      line: 8,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 47,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 17,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-11-18T22:07:54.478Z'
+}
+{
+  error: Error: FATAL ERROR: jwtPrivateKey is not defined
+      at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+      at node:internal/main/run_main_module:17:47,
+  level: 'error',
+  message: 'uncaughtException: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  stack: 'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  exception: true,
+  date: 'Fri Nov 18 2022 17:08:24 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 8772,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 80683008,
+      heapTotal: 58572800,
+      heapUsed: 38821568,
+      external: 24056435,
+      arrayBuffers: 19799682
+    }
+  },
+  os: {
+    loadavg: [ 2.77197265625, 2.81396484375, 2.63330078125 ],
+    uptime: 29213
+  },
+  trace: [
+    {
+      column: 11,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js',
+      function: 'module.exports',
+      line: 7,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 28,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js',
+      function: null,
+      line: 8,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 47,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 17,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-11-18T22:08:24.943Z'
+}
+{
+  error: Error: FATAL ERROR: jwtPrivateKey is not defined
+      at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+      at node:internal/main/run_main_module:17:47,
+  level: 'error',
+  message: 'uncaughtException: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  stack: 'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  exception: true,
+  date: 'Mon Nov 21 2022 10:33:07 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 2459,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 80990208,
+      heapTotal: 58572800,
+      heapUsed: 38943488,
+      external: 23349269,
+      arrayBuffers: 19816021
+    }
+  },
+  os: { loadavg: [ 1.8388671875, 2.13671875, 2.830078125 ], uptime: 6001 },
+  trace: [
+    {
+      column: 11,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js',
+      function: 'module.exports',
+      line: 7,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 28,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js',
+      function: null,
+      line: 8,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 47,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 17,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-11-21T15:33:07.725Z'
+}
+{
+  error: Error: FATAL ERROR: jwtPrivateKey is not defined
+      at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+      at node:internal/main/run_main_module:17:47,
+  level: 'error',
+  message: 'uncaughtException: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  stack: 'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  exception: true,
+  date: 'Mon Nov 21 2022 10:33:45 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 2474,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 81506304,
+      heapTotal: 58572800,
+      heapUsed: 38943208,
+      external: 24075390,
+      arrayBuffers: 19824213
+    }
+  },
+  os: {
+    loadavg: [ 1.5048828125, 2.02392578125, 2.7607421875 ],
+    uptime: 6039
+  },
+  trace: [
+    {
+      column: 11,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js',
+      function: 'module.exports',
+      line: 7,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 28,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js',
+      function: null,
+      line: 8,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 47,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 17,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-11-21T15:33:45.860Z'
+}
+{
+  error: Error: FATAL ERROR: jwtPrivateKey is not defined
+      at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+      at node:internal/main/run_main_module:17:47,
+  level: 'error',
+  message: 'uncaughtException: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  stack: 'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  exception: true,
+  date: 'Mon Nov 21 2022 10:34:16 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 2486,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 81584128,
+      heapTotal: 58572800,
+      heapUsed: 38881048,
+      external: 24056435,
+      arrayBuffers: 19824213
+    }
+  },
+  os: {
+    loadavg: [ 1.5244140625, 1.9736328125, 2.71630859375 ],
+    uptime: 6070
+  },
+  trace: [
+    {
+      column: 11,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js',
+      function: 'module.exports',
+      line: 7,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 28,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js',
+      function: null,
+      line: 8,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 47,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 17,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-11-21T15:34:16.547Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'email')",
+  level: 'error',
+  timestamp: '2022-11-21T20:22:43.173Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'email')",
+  level: 'error',
+  timestamp: '2022-11-21T20:24:37.446Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'email')",
+  level: 'error',
+  timestamp: '2022-11-21T20:25:44.517Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'email')",
+  level: 'error',
+  timestamp: '2022-11-21T20:26:03.650Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'email')",
+  level: 'error',
+  timestamp: '2022-11-21T20:28:38.995Z'
+}
+{
+  message: 'password is not defined',
+  level: 'error',
+  timestamp: '2022-11-21T20:46:49.037Z'
+}
+{
+  message: 'Joi.string(...).matches is not a function',
+  level: 'error',
+  timestamp: '2022-11-21T20:49:21.334Z'
+}
+{
+  message: 'E11000 duplicate key error collection: vino.users index: email_1 dup key: { email: "test@test.com" }',
+  level: 'error',
+  timestamp: '2022-11-21T20:52:25.033Z'
+}
+{
+  message: 'Invalid status code: {\n' +
+    '  _id: new ObjectId("637be59cd4268a21025ab7d5"),\n' +
+    "  username: 'test1',\n" +
+    "  email: 'test@test.com',\n" +
+    "  password: '$2b$10$sNRp9VMnQ7hr/jx9vxNKj.uvIu.xJzCZ2CywHnL4Ubk4qib5EozIu',\n" +
+    "  firstname: 'test',\n" +
+    "  surname: 'test',\n" +
+    '  isAdmin: false,\n' +
+    '  __v: 0\n' +
+    '}',
+  level: 'error',
+  timestamp: '2022-11-21T21:08:37.425Z'
+}
+{
+  error: Error: FATAL ERROR: jwtPrivateKey is not defined
+      at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+      at node:internal/main/run_main_module:17:47,
+  level: 'error',
+  message: 'uncaughtException: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  stack: 'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:7:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:8:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  exception: true,
+  date: 'Tue Nov 22 2022 09:07:01 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 1443,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 81727488,
+      heapTotal: 58572800,
+      heapUsed: 38982304,
+      external: 24081999,
+      arrayBuffers: 19830822
+    }
+  },
+  os: {
+    loadavg: [ 37.38232421875, 75.943359375, 39.36962890625 ],
+    uptime: 276
+  },
+  trace: [
+    {
+      column: 11,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js',
+      function: 'module.exports',
+      line: 7,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 28,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js',
+      function: null,
+      line: 8,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 47,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 17,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-11-22T14:07:01.510Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/routes/users.js:6
+  const { User, validateUser, function validateUser(user) {
+                                       ^^^^^^^^^^^^
+  
+  SyntaxError: Unexpected identifier
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:3:15)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: Unexpected identifier\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/users.js:6\n' +
+    'const { User, validateUser, function validateUser(user) {\n' +
+    '                                     ^^^^^^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Unexpected identifier\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:3:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/users.js:6\n' +
+    'const { User, validateUser, function validateUser(user) {\n' +
+    '                                     ^^^^^^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Unexpected identifier\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:3:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Tue Nov 22 2022 17:08:56 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 10141,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 40411136,
+      heapTotal: 17424384,
+      heapUsed: 9885304,
+      external: 1740241,
+      arrayBuffers: 155777
+    }
+  },
+  os: {
+    loadavg: [ 3.310546875, 3.2705078125, 3.24560546875 ],
+    uptime: 29191
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 3,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-22T22:08:56.458Z'
+}
+{
+  message: 'Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: vino.users index: email_1 dup key: { email: "romaindepret9@gmail.com" }',
+  level: 'error',
+  timestamp: '2022-11-23T13:48:23.953Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-23T13:51:38.520Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-23T13:58:10.550Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-23T13:59:30.057Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/routes/cellars.js:111
+            !bottleInCellar._id.equals(bottle._id);
+                                                 ^
+  
+  SyntaxError: missing ) after argument list
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:17)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: missing ) after argument list\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/cellars.js:111\n' +
+    '          !bottleInCellar._id.equals(bottle._id);\n' +
+    '                                               ^\n' +
+    '\n' +
+    'SyntaxError: missing ) after argument list\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:17)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/cellars.js:111\n' +
+    '          !bottleInCellar._id.equals(bottle._id);\n' +
+    '                                               ^\n' +
+    '\n' +
+    'SyntaxError: missing ) after argument list\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:17)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Wed Nov 23 2022 11:47:56 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 7082,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 80621568,
+      heapTotal: 58310656,
+      heapUsed: 37715752,
+      external: 24067453,
+      arrayBuffers: 19799937
+    }
+  },
+  os: {
+    loadavg: [ 3.3837890625, 3.38427734375, 3.18798828125 ],
+    uptime: 11338
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 17,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-23T16:47:56.624Z'
+}
+{
+  error: Error: FATAL ERROR: jwtPrivateKey is not defined
+      at module.exports (/Applications/MAMP/htdocs/projet-stage/vino-app/server/startup/config.js:7:11)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino-app/server/index.js:8:28)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+      at node:internal/main/run_main_module:17:47,
+  level: 'error',
+  message: 'uncaughtException: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino-app/server/startup/config.js:7:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino-app/server/index.js:8:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  stack: 'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino-app/server/startup/config.js:7:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino-app/server/index.js:8:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  exception: true,
+  date: 'Thu Nov 24 2022 13:48:24 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 7938,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino-app/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino-app/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 81391616,
+      heapTotal: 58572800,
+      heapUsed: 39356872,
+      external: 23356166,
+      arrayBuffers: 19854049
+    }
+  },
+  os: {
+    loadavg: [ 9.15380859375, 6.52685546875, 4.38818359375 ],
+    uptime: 16723
+  },
+  trace: [
+    {
+      column: 11,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino-app/server/startup/config.js',
+      function: 'module.exports',
+      line: 7,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 28,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino-app/server/index.js',
+      function: null,
+      line: 8,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 47,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 17,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-11-24T18:48:24.712Z'
+}

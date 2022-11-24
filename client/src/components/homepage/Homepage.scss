@@ -1,0 +1,28 @@
+.Homepage {
+    width: 100%;
+    height: 100vh;
+    background-color: #6a3352;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30vw;
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+
+        h1 {
+        color: #ffe599;
+        font-size: 70px;
+        letter-spacing: 0.1em;
+        line-height: 0.8;
+        }
+
+        .homepage-logo {
+            width: 150px;
+        }
+    }
+}

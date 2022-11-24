@@ -1,0 +1,28 @@
+.modifierBoutCell-title{
+    color: #6a3352;
+    padding-left: 2em !important;
+    margin-bottom: 20px !important;
+    
+}
+
+.modifierBoutCell-subtitle{
+    color: #6a3352;
+
+    & + .modifierBoutCell-subtitle {
+        margin-bottom: 20px !important;
+    }
+    
+}
+
+.modifBoutCell-btn{
+    background-color: #6a3352 !important;
+    color: #ffe599 !important;
+    font-weight: bold !important;
+    width: 75% !important;
+    border-radius: 24px !important;
+    margin-top: 40px !important;
+
+    & + .modifBoutCell-btn {
+        margin-top: 20px !important;
+    }
+}
