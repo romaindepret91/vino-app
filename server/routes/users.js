@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const router = express.Router();
 const _ = require("lodash");
 const bcrypt = require("bcrypt");
+const nodemailer = require("nodemailer");
 const { User, validateUser, validateUserInfo } = require("../models/user");
 const auth = require("../middleware/auth");
 const admin = require("../middleware/admin");
@@ -20,7 +21,7 @@ router.get(
 
 // ----- GET ONE USER ------
 router.get(
-  "/user/:id",
+  "/:id",
   [auth, admin],
   catchErrors(async (req, res) => {
     // Check if id sent is valid
@@ -138,6 +139,48 @@ router.delete(
         .status(404)
         .send("Deletion failed: user with given id not found");
     res.send(user);
+  })
+);
+
+// ----- SEND EMAIL TO USER FOR RESETTING PASSWORD -----
+router.get(
+  "/:id/passwordReset",
+  auth,
+  catchErrors(async (req, res) => {
+    // Check if id sent is valid
+    const id = req.params.id;
+    if (!mongoose.Types.ObjectId.isValid(id))
+      return res.status(400).send("Invalid user Id");
+
+    // Check if user exists
+    const user = await User.findById(id);
+    if (!user) return res.status(404).send("User with given id not found");
+
+    const transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 465,
+      auth: {
+        user: "vinoteam20632@gmail.com",
+        pass: "mxwkkxbbpttdcjuk",
+      },
+      secure: true,
+    });
+    const tempPassword = Math.random().toString(36).slice(-8);
+    const mailData = {
+      from: "vinoteam20632@gmail.com",
+      to: user.email,
+      subject: "Vino - Réinitalisation de mot de passe",
+      text: `Bonjour ${user.username},`,
+      html: `   <a href='http://localhost:3001/dashboard/passwordReset/${tempPassword}'>Cliquez ici pour réinitialiser votre mot de passe</a>`,
+    };
+
+    transporter.sendMail(mailData, (err, info) => {
+      if (err) return console.log(err);
+      res.status(200).send({
+        message: `L'email de réinitialisation a bien été envoyé à: ${user.email}`,
+        tempPassword: tempPassword,
+      });
+    });
   })
 );
 

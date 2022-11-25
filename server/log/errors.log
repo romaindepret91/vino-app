@@ -1364,3 +1364,8 @@
   ],
   timestamp: '2022-11-24T18:48:24.712Z'
 }
+{
+  message: 'toString() radix argument must be between 2 and 36',
+  level: 'error',
+  timestamp: '2022-11-25T21:08:03.370Z'
+}

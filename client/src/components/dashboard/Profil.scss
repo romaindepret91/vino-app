@@ -8,35 +8,42 @@
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  padding: 30px 20px;
-  width: 90%;
+  width: 95%;
 
-  .Profil-field {
+  .Profil-actions {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
+    background-color: rgba(192, 122, 113, 0.3);
 
-    &:not(:first-child) {
-      margin-top: 20px;
-    }
+    .Profil-btn {
+      color: #6a3352 !important;
+      background-color: rgba(192, 122, 113, 0.3);
+      border: none;
+      border-radius: 0;
 
-    .Profil-field-label {
-      font-weight: 600;
+      svg {
+        margin-left: 5px;
+      }
     }
   }
-}
 
-.Profil-btn {
-  background-color: #6a3352 !important;
-  color: #ffe599 !important;
-  font-weight: bold !important;
-  width: 75% !important;
-  border-radius: 24px !important;
-  margin-top: 40px !important;
+  .Profil-content {
+    width: 100%;
+    padding: 30px 0;
 
-  & + .Profil-btn {
-    margin-top: 20px !important;
+    .Profil-field {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+
+      &:not(:first-child) {
+        margin-top: 25px;
+      }
+
+      .Profil-field-label {
+        font-weight: 600;
+      }
+    }
   }
 }
 

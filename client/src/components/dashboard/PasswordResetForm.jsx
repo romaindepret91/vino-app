@@ -17,8 +17,8 @@ function PasswordResetForm({ userLoggedIn }) {
   // State variables and hooks
   const navigate = useNavigate();
   const [formValues, setFormValues] = useState({
-    motDePasse: "",
-    motDePasse_confirme: "",
+    password: "",
+    password_confirmed: "",
   });
   const [formErrors, setFormErrors] = useState({});
   const [formIsValid, setFormIsValid] = useState(false);
@@ -55,18 +55,18 @@ function PasswordResetForm({ userLoggedIn }) {
   useEffect(() => {
     let isFormFilled = true;
     let password;
-    let password_confirmed;
+    let password_confirmedd;
     for (const input in formValues) {
-      if (input === "motDePasse") password = formValues[input];
-      if (input === "motDePasse_confirme")
-        password_confirmed = formValues[input];
+      if (input === "password") password = formValues[input];
+      if (input === "password_confirmed")
+        password_confirmedd = formValues[input];
       const errorInput = getInputError(input, formValues[input]);
       if (formValues[input] === "" || errorInput !== null) {
         isFormFilled = false;
         break;
       }
     }
-    if (password !== password_confirmed) isFormFilled = false;
+    if (password !== password_confirmedd) isFormFilled = false;
     if (Object.keys(formErrors).length === 0 && isFormFilled)
       setFormIsValid(true);
     else setFormIsValid(false);
@@ -111,53 +111,55 @@ function PasswordResetForm({ userLoggedIn }) {
   }
 
   return (
-    <Card>
+    <div className="PasswordReset">
       <h2>Nouveau mot de passe</h2>
-      <form className="PasswordResetForm" onSubmit={handleUpdatePassword}>
-        <TextField
-          className="textField"
-          required
-          type="password"
-          id="motDePasse"
-          name="motDePasse"
-          variant="outlined"
-          label="Mot de passe"
-          margin="dense"
-          value={formValues.motDePasse}
-          onBlur={handleInputChange}
-          onChange={handleInputChangeValue}
-          error={formErrors.motDePasse ? true : false}
-          helperText={formErrors.motDePasse}
-        >
-          Mot de passe
-        </TextField>
-        <TextField
-          className="textField"
-          required
-          type="password"
-          id="motDePasse_confirme"
-          name="motDePasse_confirme"
-          variant="outlined"
-          label="Confirmer Mot de passe"
-          margin="dense"
-          value={formValues.motDePasse_confirme}
-          onBlur={handleInputChange}
-          onChange={handleInputChangeValue}
-          error={formErrors.motDePasse_confirme ? true : false}
-          helperText={formErrors.motDePasse_confirme}
-        >
-          Confirmer Mot de passe
-        </TextField>
-        <Button
-          className="valider"
-          variant="contained"
-          type="submit"
-          disabled={!formIsValid}
-        >
-          Valider
-        </Button>
-      </form>
-    </Card>
+      <Card>
+        <form className="PasswordResetForm" onSubmit={handleUpdatePassword}>
+          <TextField
+            className="textField"
+            required
+            type="password"
+            id="password"
+            name="password"
+            variant="outlined"
+            label="Mot de passe"
+            margin="dense"
+            value={formValues.password}
+            onBlur={handleInputChange}
+            onChange={handleInputChangeValue}
+            error={formErrors.password ? true : false}
+            helperText={formErrors.password}
+          >
+            Mot de passe
+          </TextField>
+          <TextField
+            className="textField"
+            required
+            type="password"
+            id="password_confirmed"
+            name="password_confirmed"
+            variant="outlined"
+            label="Confirmer Mot de passe"
+            margin="dense"
+            value={formValues.password_confirmed}
+            onBlur={handleInputChange}
+            onChange={handleInputChangeValue}
+            error={formErrors.password_confirmed ? true : false}
+            helperText={formErrors.password_confirmed}
+          >
+            Confirmer Mot de passe
+          </TextField>
+          <Button
+            className="valider"
+            variant="contained"
+            type="submit"
+            disabled={!formIsValid}
+          >
+            Valider
+          </Button>
+        </form>
+      </Card>
+    </div>
   );
 }
 

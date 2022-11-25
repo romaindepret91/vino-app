@@ -1,7 +1,6 @@
 // Npm packages and utilities
 import React, { useState, useEffect, useContext } from "react";
 import { useLocation } from "react-router-dom";
-import axios from "axios";
 import {
   Button,
   Card,
@@ -14,12 +13,14 @@ import {
   Alert,
   IconButton,
 } from "@mui/material";
+import { faPen, faKey } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CloseIcon from "@mui/icons-material/Close";
 import { getInputError } from "../homepage/formValidator/signupForm";
 // Contexts
 import UserContext from "../../context/userContext";
 // DB Requests
-import { updateUser } from "../../dbRequests/users";
+import { updateUser, passwordReset } from "../../dbRequests/users";
 // Styles
 import "./Profil.scss";
 
@@ -49,7 +50,6 @@ function Profil() {
   const [emailSentSuccessMsg, setEmailSentSuccessMsg] = useState(null);
   const [updateSuccessMsg, setUpdateSuccessMsg] = useState(null);
   // Global variables
-  const hostOriginURL = "http://localhost:3000";
 
   /**
    * Update form data on change of input value
@@ -128,26 +128,11 @@ function Profil() {
   };
 
   /**
-   * Sends reset password email
-   * @returns {Promise}
-   */
-  const sendEmail = async () => {
-    return await axios.get(`${hostOriginURL}/api/custom-auth/sendEmail`, {
-      headers: {
-        Authorization: "Bearer " + user.access_token,
-      },
-    });
-  };
-
-  /**
    * Handle reset password email after email sent
    */
   function handleSendEmail() {
-    sendEmail().then((response) => {
-      setEmailSentSuccessMsg(
-        `L'email de réinitialisation a bien été envoyé à l'adresse: ` +
-          response.data.email
-      );
+    passwordReset(user).then((response) => {
+      setEmailSentSuccessMsg(response.data.message);
     });
   }
 
@@ -212,37 +197,43 @@ function Profil() {
         </Alert>
       )}
       <Card className="Profil">
-        <div className="Profil-field">
-          <span className="Profil-field-label">Nom d'utilisateur: </span>
-          <span>{user["user"].username}</span>
+        <div className="Profil-actions">
+          <Button
+            className="Profil-btn"
+            variant="contained"
+            onClick={handleClickOpen}
+          >
+            Modifier
+            <FontAwesomeIcon icon={faPen} />
+          </Button>
+          <Button
+            className="Profil-btn"
+            variant="contained"
+            onClick={handleSendEmail}
+          >
+            Réinitialiser le mot de passe
+            <FontAwesomeIcon icon={faKey} />
+          </Button>
         </div>
-        <div className="Profil-field">
-          <span className="Profil-field-label">Courriel: </span>
-          <span>{user["user"].email}</span>
-        </div>
-        <div className="Profil-field">
-          <span className="Profil-field-label">Prénom: </span>
-          <span>{user["user"].firstname}</span>
-        </div>
-        <div className="Profil-field">
-          <span className="Profil-field-label">Nom: </span>
-          <span>{user["user"].surname}</span>
+        <div className="Profil-content">
+          <div className="Profil-field">
+            <span className="Profil-field-label">Nom d'utilisateur: </span>
+            <span>{user["user"].username}</span>
+          </div>
+          <div className="Profil-field">
+            <span className="Profil-field-label">Courriel: </span>
+            <span>{user["user"].email}</span>
+          </div>
+          <div className="Profil-field">
+            <span className="Profil-field-label">Prénom: </span>
+            <span>{user["user"].firstname}</span>
+          </div>
+          <div className="Profil-field">
+            <span className="Profil-field-label">Nom: </span>
+            <span>{user["user"].surname}</span>
+          </div>
         </div>
       </Card>
-      <Button
-        className="Profil-btn"
-        variant="contained"
-        onClick={handleClickOpen}
-      >
-        Modifier
-      </Button>
-      <Button
-        className="Profil-btn"
-        variant="contained"
-        onClick={handleSendEmail}
-      >
-        Réinitialiser le mot de passe
-      </Button>
       <Dialog className="Profil-dialog" open={open} onClose={handleClose}>
         <DialogTitle>Mes informations</DialogTitle>
         <DialogContent>

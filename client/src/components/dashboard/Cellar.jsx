@@ -1,17 +1,11 @@
 // Npm packages and utilities
-import React, { useContext, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Button, Card, Alert, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import AddCircleRoundedIcon from "@mui/icons-material/AddCircleRounded";
-import ErrorIcon from "@mui/icons-material/Error";
-// Contexts
-import CellarsContext from "../../context/cellarsContext";
-import UserContext from "../../context/userContext";
 // Components
 import BottleCard from "./BottleCard";
-// DB Requests
-import { deleteCellar } from "../../dbRequests/cellars";
 // Styles
 import "./Cellar.scss";
 
@@ -25,7 +19,6 @@ function Cellar() {
   // State variables and hooks
   const navigate = useNavigate();
   const { state: cellar } = useLocation();
-  const [user] = useContext(UserContext);
   const [retroactionMsg, setRetroactionMsg] = useState(
     cellar.success_message || null
   );

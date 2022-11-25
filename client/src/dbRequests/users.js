@@ -14,3 +14,18 @@ export async function updateUser(data, user) {
     },
   });
 }
+
+/**
+ * Sends reset password email
+ * @returns {Promise}
+ */
+export async function passwordReset(user) {
+  return await axios.get(
+    `${hostOriginURL}/api/users/${user.user._id}/passwordReset`,
+    {
+      headers: {
+        "x-auth-token": user.access_token,
+      },
+    }
+  );
+}
