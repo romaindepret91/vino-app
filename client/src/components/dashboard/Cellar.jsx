@@ -1,17 +1,7 @@
 // Npm packages and utilities
 import React, { useContext, useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import {
-  Button,
-  Card,
-  Alert,
-  IconButton,
-  Dialog,
-  DialogContent,
-  DialogContentText,
-  DialogTitle,
-  DialogActions,
-} from "@mui/material";
+import { Button, Card, Alert, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import AddCircleRoundedIcon from "@mui/icons-material/AddCircleRounded";
 import ErrorIcon from "@mui/icons-material/Error";
@@ -39,35 +29,7 @@ function Cellar() {
   const [retroactionMsg, setRetroactionMsg] = useState(
     cellar.success_message || null
   );
-  const [openSuppDialog, setOpenSuppDialog] = useState(false);
   const [bottlesInCellar, setBottlesInCellar] = useState(cellar.cellar.bottles);
-  const [cellars, setCellars] = useContext(CellarsContext);
-
-  /**
-   * Handle closing of dialog box containing confirmation message after deletion of a cellar.
-   */
-  const handleCloseDialog = () => {
-    setOpenSuppDialog(false);
-  };
-
-  /**
-   * Handle the display of remaining cellars after deletion of a cellar from the db. Redirect to the updated cellars list with confirmation message.
-   * @param {number} currentCellarId Id of the cellar deleted from the db
-   * @returns {void} void
-   */
-  const handleDeleteCellar = (id) => {
-    deleteCellar(id, user.access_token).then((response) => {
-      const cellarToRemove = response.data;
-      let result = cellars.filter(
-        (cellar) => cellar._id !== cellarToRemove._id
-      );
-      setCellars([...result]);
-      navigate(`/dashboard/cellars`, {
-        state: { success_message: "Cellar supprimé!" },
-        replace: true,
-      });
-    });
-  };
 
   /**
    * Handle persistence of data in case of hard reload.
@@ -90,34 +52,8 @@ function Cellar() {
   }, []);
 
   return (
-    <div className="listeBouteilles">
+    <div className="cellar-content">
       <h2>{cellar.cellar.name}</h2>
-      {/* Dialog box for deletion confirmation */}
-      <Dialog open={openSuppDialog}>
-        <DialogContent>
-          <DialogTitle id="attention">ATTENTION</DialogTitle>
-          <DialogContentText id="alert-dialog-description">
-            Voulez vous supprimer ce cellier?
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button
-            style={{ color: "#6a3352" }}
-            onClick={handleCloseDialog}
-            autoFocus
-          >
-            Annuler
-          </Button>
-          <Button
-            style={{ color: "#6a3352" }}
-            onClick={() => {
-              handleDeleteCellar(cellar.cellar._id);
-            }}
-          >
-            Supprimer
-          </Button>
-        </DialogActions>
-      </Dialog>
       {/* Success deletion message */}
       {retroactionMsg && (
         <Alert
@@ -160,26 +96,13 @@ function Cellar() {
       ))}
       {/* Button to add a bottle in the cellar */}
       <Button onClick={() => navigate(`/dashboard/addBottle`)}>
-        <Card className="Carte-bouteille">
+        <Card className="BottleCard-card">
           <div className="addBottle">
             <div>
               <h2>Ajouter une Bouteille</h2>
             </div>
             <div>
               <AddCircleRoundedIcon />
-            </div>
-          </div>
-        </Card>
-      </Button>
-      {/* Button to delete the cellar */}
-      <Button onClick={() => setOpenSuppDialog(true)}>
-        <Card className="Carte-bouteille">
-          <div className="addBottle">
-            <div>
-              <h2>Supprimer ce Cellier</h2>
-            </div>
-            <div>
-              <ErrorIcon />
             </div>
           </div>
         </Card>

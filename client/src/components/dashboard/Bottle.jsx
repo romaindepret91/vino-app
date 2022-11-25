@@ -66,7 +66,7 @@ function Bottle() {
    * Handle the minus button of bottle quantity. Trigger the deletion dialog box when quantity reaches 0.
    * @param {number} value New quantity of the selected bottle
    */
-  const updateQuantity = (value) => {
+  const handleUpdateQuantity = (value) => {
     if (quantity === 1 && parseInt(value) === -1) {
       setOpenSuppDialog(true);
       return;
@@ -105,7 +105,7 @@ function Bottle() {
   };
 
   return (
-    <div className="Carte-une-bouteille">
+    <div className="Bottle-card">
       <div className="actions">
         <Button
           disabled={false}
@@ -200,21 +200,21 @@ function Bottle() {
           </div>
         </div>
         <div className="quantity icon">
-          <span>Qté</span>
+          <span>En stock:</span>
           <strong>{quantity}</strong>
         </div>
         <ButtonGroup variant="text" className="options">
           <Button
             value={1}
             onClick={(e) => {
-              updateQuantity(e.currentTarget.value);
+              handleUpdateQuantity(e.currentTarget.value);
             }}
           >
             <FontAwesomeIcon value={1} icon={faPlus} />
           </Button>
           <Button
             value={-1}
-            onClick={(e) => updateQuantity(e.currentTarget.value)}
+            onClick={(e) => handleUpdateQuantity(e.currentTarget.value)}
           >
             <FontAwesomeIcon value={-1} icon={faMinus} />
           </Button>

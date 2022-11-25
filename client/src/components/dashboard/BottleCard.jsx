@@ -33,7 +33,7 @@ function BottleCard({ bottle }) {
 
   return dataIsReturned ? (
     <React.Fragment>
-      <Card className="Carte-bouteille">
+      <Card className="BottleCard-card">
         <div className="couleur">
           <p className={bottleToDisplay.type}>
             <CircleIcon sx={{ fontSize: 100, top: -40, left: 200 }} />

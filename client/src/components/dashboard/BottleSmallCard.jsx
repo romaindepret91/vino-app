@@ -2,7 +2,7 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 // Styles
-import "./BottleCard.scss";
+import "./BottleSmallCard.scss";
 
 /**
  * BottleSmallCard Component.
@@ -20,7 +20,7 @@ export default function BottleSmallCard({
   const urlNoParam = url.split("?")[0];
 
   return (
-    <Card className="Carte-bouteille">
+    <Card className="BottleSmallCard-card">
       <div className="wrapper">
         <div className="info">
           <h3>{name}</h3>

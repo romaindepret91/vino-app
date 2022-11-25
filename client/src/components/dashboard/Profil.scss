@@ -1,62 +1,63 @@
 .Profil-title {
-    color: #6a3352;
+  color: #6a3352;
+  margin-top: 2vh;
 }
 
 .Profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 30px 20px;
+  width: 90%;
+
+  .Profil-field {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 30px;
-    padding: 30px 20px;
+    justify-content: space-between;
     width: 90%;
 
-    .Profil-field {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 90%;
-
-        &:not(:first-child) {
-            margin-top: 20px;
-        }
-
-        .Profil-field-label {
-            font-weight: 600;
-        }
+    &:not(:first-child) {
+      margin-top: 20px;
     }
+
+    .Profil-field-label {
+      font-weight: 600;
+    }
+  }
 }
 
 .Profil-btn {
-    background-color: #6a3352 !important;
-    color: #ffe599 !important;
-    font-weight: bold !important;
-    width: 75% !important;
-    border-radius: 24px !important;
-    margin-top: 40px !important;
+  background-color: #6a3352 !important;
+  color: #ffe599 !important;
+  font-weight: bold !important;
+  width: 75% !important;
+  border-radius: 24px !important;
+  margin-top: 40px !important;
 
-    & + .Profil-btn {
-        margin-top: 20px !important;
-    }
+  & + .Profil-btn {
+    margin-top: 20px !important;
+  }
 }
 
 .Profil-dialog {
-    .MuiPaper-root {
-        padding: 30px 0;
-    }
+  .MuiPaper-root {
+    padding: 30px 0;
+  }
 
-    .MuiDialogContent-root {
-        margin-top: 10px;
+  .MuiDialogContent-root {
+    margin-top: 10px;
 
-        .css-1a1fmpi-MuiInputBase-root-MuiInput-root:after {
-            border-bottom: 2px solid#6a3352;
-        }
+    .css-1a1fmpi-MuiInputBase-root-MuiInput-root:after {
+      border-bottom: 2px solid#6a3352;
     }
+  }
 
-    .MuiFormControl-root {
-        margin-top: 20px !important;
-    }
+  .MuiFormControl-root {
+    margin-top: 20px !important;
+  }
 
-    .MuiDialogTitle-root {
-        text-align: center;
-    }
+  .MuiDialogTitle-root {
+    text-align: center;
+  }
 }

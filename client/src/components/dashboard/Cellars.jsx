@@ -12,13 +12,18 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Dialog,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  DialogActions,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import AddCircleRoundedIcon from "@mui/icons-material/AddCircleRounded";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDungeon } from "@fortawesome/free-solid-svg-icons";
+import { faDungeon, faTrash } from "@fortawesome/free-solid-svg-icons";
 // DB Requests
-import { getCellars } from "../../dbRequests/cellars";
+import { getCellars, deleteCellar } from "../../dbRequests/cellars";
 // Contexts
 import CellarsContext from "../../context/cellarsContext";
 import UserContext from "../../context/userContext";
@@ -31,13 +36,42 @@ import "./Cellars.scss";
  *
  * @returns {div} The Cellars
  */
-function Cellars({ setCurrentCellarId }) {
+function Cellars({ setCurrentCellarId, currentCellarId }) {
   // State variables and hooks
   const navigate = useNavigate();
   const [user] = useContext(UserContext);
   const [cellars, setCellars] = useContext(CellarsContext);
   const { state: retroaction } = useLocation();
   const [retroactionMsg, setRetroactionMsg] = useState(retroaction || null);
+  const [openSuppDialog, setOpenSuppDialog] = useState(false);
+
+  /**
+   * Handle closing of dialog box containing confirmation message after deletion of a cellar.
+   */
+  const handleCloseDialog = () => {
+    setOpenSuppDialog(false);
+  };
+
+  /**
+   * Handle the display of remaining cellars after deletion of a cellar from the db. Redirect to the updated cellars list with confirmation message.
+   * @param {number} currentCellarId Id of the cellar deleted from the db
+   * @returns {void} void
+   */
+  const handleDeleteCellar = (id) => {
+    deleteCellar(id, user.access_token).then((response) => {
+      const cellarToRemove = response.data;
+      let result = cellars.filter(
+        (cellar) => cellar._id !== cellarToRemove._id
+      );
+      setCellars([...result]);
+      setOpenSuppDialog(false);
+      navigate(`/dashboard/cellars`, {
+        state: { success_message: "Cellar supprimé!" },
+        replace: true,
+      });
+    });
+  };
+
   /**
    * Handle return action message display
    */
@@ -61,7 +95,7 @@ function Cellars({ setCurrentCellarId }) {
 
   return (
     <div className="Cellars">
-      <h2>Vos celliers</h2>
+      <h2>MA LISTE DE CELLIERS</h2>
       {retroactionMsg && (
         <Alert
           severity="success"
@@ -81,6 +115,32 @@ function Cellars({ setCurrentCellarId }) {
           {retroactionMsg.success_message}
         </Alert>
       )}
+      {/* Dialog box for deletion confirmation */}
+      <Dialog open={openSuppDialog}>
+        <DialogContent>
+          <DialogTitle id="attention">ATTENTION</DialogTitle>
+          <DialogContentText id="alert-dialog-description">
+            Voulez vous supprimer ce cellier?
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button
+            style={{ color: "#6a3352" }}
+            onClick={handleCloseDialog}
+            autoFocus
+          >
+            Annuler
+          </Button>
+          <Button
+            style={{ color: "#6a3352" }}
+            onClick={() => {
+              handleDeleteCellar(currentCellarId);
+            }}
+          >
+            Supprimer
+          </Button>
+        </DialogActions>
+      </Dialog>
       {cellars.length === 0 && (
         <p className="noBouteille">Aucun cellier à afficher</p>
       )}
@@ -88,7 +148,7 @@ function Cellars({ setCurrentCellarId }) {
         <List component="nav">
           {cellars.map((cellar) => {
             return (
-              <React.Fragment key={cellar._id}>
+              <div className="cellar" key={cellar._id}>
                 <ListItemButton
                   onClick={() => {
                     setCurrentCellarId(cellar._id);
@@ -102,8 +162,17 @@ function Cellars({ setCurrentCellarId }) {
                   </ListItemIcon>
                   <ListItemText primary={cellar.name} />
                 </ListItemButton>
+                <ListItemButton
+                  className="trash-btn"
+                  onClick={() => {
+                    setCurrentCellarId(cellar._id);
+                    setOpenSuppDialog(true);
+                  }}
+                >
+                  <FontAwesomeIcon className="navIconTrash" icon={faTrash} />
+                </ListItemButton>
                 <Divider variant="middle" />
-              </React.Fragment>
+              </div>
             );
           })}
         </List>

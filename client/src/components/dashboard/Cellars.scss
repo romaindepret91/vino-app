@@ -1,35 +1,48 @@
 .Cellars {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #6a3352;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #6a3352;
+  width: 100%;
+  margin-top: 2vh;
 }
 
 .Cellars-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #6a3352;
+  font-weight: bold;
+
+  .cellar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .trash-btn {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 10px;
+    }
+  }
+
+  .MuiListItemIcon-root {
+    color: #6a3352;
+    font-size: 1.5em;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    color: #6a3352;
-    font-weight: bold;
+    justify-content: center;
+  }
 
-    .MuiListItemIcon-root {
-        color: #6a3352;
-        font-size: 1.5em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+  & > h2 {
+    text-align: center;
+    padding-bottom: 2vh !important;
+  }
 
-    & > h2 {
-        text-align: center;
-        padding-bottom: 2vh !important;
-    }
-
-    hr {
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  hr {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

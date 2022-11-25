@@ -26,6 +26,7 @@ import CellarsContext from "../../context/cellarsContext";
 import { getCellars, updateCellar } from "../../dbRequests/cellars";
 // Components
 import BottleSmallCard from "./BottleSmallCard";
+import BottleSmall from "./BottleSmall";
 // Styles
 import "./AddForm.scss";
 
@@ -50,6 +51,7 @@ function AddBottle() {
   const [openNoCellarDialog, setOpenNoCellarDialog] = useState(false);
   const [openConfirmDialog, setOpenConfirmDialog] = useState(false);
   const [openSelectCellarDialog, setOpenSelectCellarDialog] = useState(false);
+  const [openQuantityDialog, setOpenQuantityDialog] = useState(false);
   // Global variables
   /**
    * Handle the choice of cellar where user adds a new bottle, on client side.
@@ -89,23 +91,38 @@ function AddBottle() {
   };
 
   /**
-   * Handle confirmation dialog box on adding new bottle.
+   * Handle open quantity dialog box on adding new bottle.
    * @param {*} e Object event type
    * @param {*} reason Object reason type
    * @returns {void}
    */
-  const handleOpenConfirmDialog = (bottle) => {
+  const handleOpenQuantityDialog = (bottle) => {
     if (!cellar) return setOpenSelectCellarDialog(true);
     setInsertedBottle(bottle);
+    setOpenQuantityDialog(true);
+  };
+
+  /**
+   * Handle close of quantity dialog
+   * @param {*} e Object event type
+   * @param {*} reason Object reason type
+   * @returns {void}
+   */
+  const handleCloseQuantityDialog = (e, reason) => {
+    if (reason && reason == "backdropClick") return;
+    setOpenQuantityDialog(false);
     setOpenConfirmDialog(true);
   };
 
   /**
-   * Prevent default behaviour of submit form action
-   * @param {object} e Object event type
+   * Prevent dialog box to close on backdrop click. Close dialog box only on button click.
+   * @param {*} e Object event type
+   * @param {*} reason Object reason type
+   * @returns {void}
    */
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleCloseConfirmDialog = (e, reason) => {
+    if (reason && reason == "backdropClick") return;
+    setOpenConfirmDialog(false);
   };
 
   /**
@@ -131,14 +148,11 @@ function AddBottle() {
   };
 
   /**
-   * Prevent dialog box to close on backdrop click. Close dialog box only on button click.
-   * @param {*} e Object event type
-   * @param {*} reason Object reason type
-   * @returns {void}
+   * Prevent default behaviour of submit form action
+   * @param {object} e Object event type
    */
-  const handleCloseConfirmDialog = (e, reason) => {
-    if (reason && reason == "backdropClick") return;
-    setOpenConfirmDialog(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
   };
 
   /**
@@ -181,7 +195,6 @@ function AddBottle() {
     setClonedBottles(res);
   }, [libelle]);
   window.scrollTo(0, 0);
-
   return (
     <div className="FormAjout">
       <Dialog
@@ -217,14 +230,56 @@ function AddBottle() {
         </DialogActions>
       </Dialog>
       <Dialog
-        className="AjoutBouteilleConfirm-dialog"
+        className="quantity-dialog"
+        open={openQuantityDialog}
+        onClose={handleCloseQuantityDialog}
+      >
+        <DialogTitle>Quantité souhaitée</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            Quantité de cette bouteille à ajouter au cellier
+          </DialogContentText>
+          <input
+            name="quantity"
+            id="quantity"
+            type="number"
+            defaultValue={1}
+            min="1"
+            onChange={(e) =>
+              e.target.value <= 0
+                ? (e.target.value = null)
+                : (e.target.value = parseInt(e.target.value))
+            }
+            onInput={(e) => {
+              setQuantity(parseInt(e.target.value));
+            }}
+            style={{ marginTop: "10px" }}
+          />
+        </DialogContent>
+        <DialogActions>
+          <Button
+            style={{ color: "#6a3352" }}
+            onClick={() => setOpenQuantityDialog(false)}
+          >
+            Retour
+          </Button>
+          <Button
+            style={{ color: "#6a3352" }}
+            onClick={() => {
+              handleCloseQuantityDialog();
+            }}
+          >
+            Confirmer
+          </Button>
+        </DialogActions>
+      </Dialog>
+      <Dialog
+        className="confirmation-dialog"
         open={openConfirmDialog}
         onClose={handleCloseConfirmDialog}
       >
         <DialogContent>
-          <DialogTitle>
-            {insertedBottle ? insertedBottle.name : null}
-          </DialogTitle>
+          <BottleSmall bottle={insertedBottle} />
           <DialogContentText>
             <strong>Confirmer l'ajout de cette bouteille au cellier?</strong>
           </DialogContentText>
@@ -234,7 +289,12 @@ function AddBottle() {
         </DialogContent>
         <DialogActions>
           <Button
-            style={{ color: "#6a3352" }}
+            style={{
+              color: "#6a3352",
+              fontSize: ".8em",
+              fontWeight: 500,
+              border: ".5px solid #6a3352",
+            }}
             onClick={() => {
               handleCloseConfirmDialog();
             }}
@@ -242,7 +302,12 @@ function AddBottle() {
             Annuler
           </Button>
           <Button
-            style={{ color: "#6a3352" }}
+            style={{
+              color: "#6a3352",
+              fontSize: ".8em",
+              fontWeight: 500,
+              border: ".5px solid #6a3352",
+            }}
             onClick={() => {
               handleAddBottleInCellar(insertedBottle);
             }}
@@ -252,21 +317,25 @@ function AddBottle() {
         </DialogActions>
       </Dialog>
       <Dialog
-        className="SelectCellar-dialog"
+        className="selectCellar-dialog"
         open={openSelectCellarDialog}
         onClose={handleCloseConfirmDialog}
       >
         <DialogContent>
-          <DialogTitle>Choix du cellier</DialogTitle>
+          <DialogTitle>Aucun cellier selectionné...</DialogTitle>
           <DialogContentText>
-            <strong>
-              Veuillez sélectionner un cellier avant l'ajout d'une bouteille.
-            </strong>
+            Veuillez faire le choix du cellier dans lequel vous souhaitez
+            ajouter cette bouteille.
           </DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button
-            style={{ color: "#6a3352" }}
+            style={{
+              color: "#6a3352",
+              fontSize: ".9em",
+              fontWeight: 500,
+              border: ".5px solid #6a3352",
+            }}
             onClick={() => {
               handleCloseSelectCellarDialog();
             }}
@@ -323,20 +392,6 @@ function AddBottle() {
               Recherche
             </TextField>
           </Grid>
-          <Grid item xs={12}>
-            <TextField
-              required
-              type="number"
-              id="quantity"
-              name="quantity"
-              label="Quantité"
-              variant="outlined"
-              margin="dense"
-              onChange={(e) => setQuantity(e.target.value)}
-            >
-              Quantité
-            </TextField>
-          </Grid>
         </Grid>
 
         <label htmlFor="liste">
@@ -350,7 +405,7 @@ function AddBottle() {
                       <ListItem
                         divider
                         key={bottle._id}
-                        onClick={(e) => handleOpenConfirmDialog(bottle)}
+                        onClick={(e) => handleOpenQuantityDialog(bottle)}
                       >
                         <BottleSmallCard {...bottle} quantity={quantity} />
                       </ListItem>
@@ -360,7 +415,7 @@ function AddBottle() {
                       <ListItem
                         divider
                         key={bottle._id}
-                        onClick={(e) => handleOpenConfirmDialog(bottle)}
+                        onClick={(e) => handleOpenQuantityDialog(bottle)}
                       >
                         <BottleSmallCard {...bottle} quantity={quantity} />
                       </ListItem>
@@ -370,7 +425,7 @@ function AddBottle() {
                   <ListItem
                     divider
                     key={carouselBottle._id}
-                    onClick={(e) => handleOpenConfirmDialog(carouselBottle)}
+                    onClick={(e) => handleOpenQuantityDialog(carouselBottle)}
                   >
                     <BottleSmallCard {...carouselBottle} quantity={quantity} />
                   </ListItem>

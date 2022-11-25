@@ -1,25 +1,29 @@
-.listeBouteilles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.cellar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: #6a3352;
+
+  & > h2 {
+    margin: 2vh 0;
+  }
+
+  .MuiButton-root {
+    border-radius: none !important;
+    border: none !important;
+    color: white;
+  }
+
+  .MuiListItemButton-root,
+  .MuiButtonBase-root,
+  .MuiButton-root {
     width: 100%;
-    color: #6a3352;
-
-    .MuiButton-root {
-        border-radius: none !important;
-        border: none !important;
-        color: white;
-    }
-
-    .MuiListItemButton-root,
-    .MuiButtonBase-root,
-    .MuiButton-root {
-        width: 100%;
-        text-transform: none !important;
-        line-height: normal !important;
-    }
+    text-transform: none !important;
+    line-height: normal !important;
+  }
 }
 
 .noBouteille {
-    padding: 10px 0;
+  padding: 10px 0;
 }

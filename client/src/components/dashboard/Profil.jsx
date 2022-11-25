@@ -153,7 +153,7 @@ function Profil() {
 
   return (
     <React.Fragment>
-      <h2 className="Profil-title">Mon Profil</h2>
+      <h2 className="Profil-title">MON PROFIL</h2>
       {emailSentSuccessMsg && (
         <Alert
           severity="success"

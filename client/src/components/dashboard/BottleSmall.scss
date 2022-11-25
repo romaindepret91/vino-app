@@ -1,4 +1,4 @@
-.Bottle-card {
+.Carte-une-bouteille {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -27,16 +27,17 @@
     flex-direction: column;
     flex-grow: 1;
     align-items: center;
-    padding-top: 4vh;
+    padding-top: 1vh;
 
     p {
       text-align: center;
+      font-size: 0.8em;
     }
 
     .background {
       position: absolute;
-      top: 27vh;
-      max-height: 40vh;
+      top: 10vh;
+      max-height: 30vh;
     }
 
     .blanc {
@@ -66,8 +67,8 @@
       justify-items: center;
       justify-content: center;
       align-items: start;
-      min-width: 90vw;
-      max-height: 40vh;
+      min-width: 80vw;
+      max-height: 60vh;
       padding-top: 2vh;
     }
 
@@ -79,7 +80,7 @@
     }
 
     img {
-      max-height: 35vh;
+      max-height: 25vh;
       z-index: 10;
     }
 
@@ -134,12 +135,6 @@
         font-size: 1.6em;
         text-transform: none;
       }
-    }
-
-    .quantity {
-      grid-column: 2 / 3;
-      grid-row: 4;
-      margin: 1vh 0;
     }
 
     h3 {

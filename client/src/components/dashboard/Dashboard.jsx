@@ -53,7 +53,10 @@ function Dashboard({ currentCellarId, setCurrentCellarId }) {
                 path="/cellars"
                 element={
                   <React.Fragment>
-                    <Cellars setCurrentCellarId={setCurrentCellarId} />
+                    <Cellars
+                      setCurrentCellarId={setCurrentCellarId}
+                      currentCellarId={currentCellarId}
+                    />
                   </React.Fragment>
                 }
               />
