@@ -4,7 +4,12 @@ const router = express.Router();
 const _ = require("lodash");
 const bcrypt = require("bcrypt");
 const nodemailer = require("nodemailer");
-const { User, validateUser, validateUserInfo } = require("../models/user");
+const {
+  User,
+  validateUser,
+  validateUserInfo,
+  validateUserPassword,
+} = require("../models/user");
 const auth = require("../middleware/auth");
 const admin = require("../middleware/admin");
 const catchErrors = require("../middleware/catchErrors");
@@ -79,7 +84,7 @@ router.post(
   })
 );
 
-// ----- UPDATE USER ------
+// ----- UPDATE USER INFO ------
 router.put(
   "/:id",
   auth,
@@ -166,6 +171,11 @@ router.get(
       secure: true,
     });
     const tempPassword = Math.random().toString(36).slice(-8);
+    // Store temporary password
+    await User.findByIdAndUpdate(id, {
+      tempPassword: tempPassword,
+    });
+
     const mailData = {
       from: "vinoteam20632@gmail.com",
       to: user.email,
@@ -181,6 +191,49 @@ router.get(
         tempPassword: tempPassword,
       });
     });
+  })
+);
+
+// ----- UPDATE USER INFO ------
+router.put(
+  "/:id/updatePassword",
+  auth,
+  catchErrors(async (req, res) => {
+    //Check if id sent is valid
+    const id = req.params.id;
+    if (!mongoose.Types.ObjectId.isValid(id))
+      return res.status(400).send("Invalid user Id");
+
+    // Data validation
+    const result = validateUserPassword(req.body);
+    if (result.error)
+      return res.status(400).send(result.error.details[0].message);
+
+    // Check if user exists
+    let user = await User.findById(id);
+    if (!user)
+      return res
+        .status(404)
+        .send("Update failed: user with given id not found");
+
+    // Check temporary password
+    if (user.tempPassword !== req.body.tempPassword)
+      return res.status(401).send("Opération non autorisée");
+
+    // Hashing new password
+    const salt = await bcrypt.genSalt(10);
+    req.body.password = await bcrypt.hash(req.body.password, salt);
+
+    // Update user password
+    user = await User.findByIdAndUpdate(
+      id,
+      {
+        password: req.body.password,
+      },
+      { new: true } // returns updated user
+    );
+
+    res.send(user);
   })
 );
 

@@ -131,8 +131,8 @@ function Profil() {
    * Handle reset password email after email sent
    */
   function handleSendEmail() {
-    passwordReset(user).then((response) => {
-      setEmailSentSuccessMsg(response.data.message);
+    passwordReset(user).then((res) => {
+      setEmailSentSuccessMsg(res.data.message);
     });
   }
 

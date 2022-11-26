@@ -50,6 +50,12 @@ const userSchema = new mongoose.Schema({
     required: true,
     default: false,
   },
+  tempPassword: {
+    type: String,
+    trim: true,
+    default: null,
+    match: [/^[A-Za-z0-9]{8}$/, "Wrong format"],
+  },
 });
 
 // Method to generate JSON web token
@@ -97,7 +103,18 @@ function validateUserInfo(user) {
   return schema.validate(user);
 }
 
+// Data validation for updating user password
+function validateUserPassword(user) {
+  const schema = Joi.object({
+    password: pswdComplexity(complexityOptions).required(),
+    password_confirmed: Joi.string().valid(Joi.ref("password")).required(),
+    tempPassword: Joi.string().required(),
+  });
+  return schema.validate(user);
+}
+
 // Exports
 exports.User = User;
 exports.validateUser = validateUser;
 exports.validateUserInfo = validateUserInfo;
+exports.validateUserPassword = validateUserPassword;

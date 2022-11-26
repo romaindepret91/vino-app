@@ -29,3 +29,20 @@ export async function passwordReset(user) {
     }
   );
 }
+
+/**
+ * Update user password in the db
+ * @param {object} data New password value
+ * @returns {Promise} Promise object represents the updated user
+ */
+export async function updatePassword(data, user) {
+  return await axios.put(
+    `${hostOriginURL}/api/users/${user.user._id}/updatePassword`,
+    data,
+    {
+      headers: {
+        "x-auth-token": user.access_token,
+      },
+    }
+  );
+}

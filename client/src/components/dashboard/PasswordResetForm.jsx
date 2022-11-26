@@ -1,9 +1,12 @@
 // Npm packages and utilities
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 import { TextField, Button, Card } from "@mui/material";
 import { getInputError } from "../homepage/formValidator/signupForm";
+// Contexts
+import UserContext from "../../context/userContext";
+// DB Requests
+import { updatePassword } from "../../dbRequests/users";
 // Styles
 import "./PasswordResetForm.scss";
 
@@ -13,8 +16,9 @@ import "./PasswordResetForm.scss";
  *
  * @returns {Card} The PasswordResetForm. Contains password update form.
  */
-function PasswordResetForm({ userLoggedIn }) {
+function PasswordResetForm() {
   // State variables and hooks
+  const [user] = useContext(UserContext);
   const navigate = useNavigate();
   const [formValues, setFormValues] = useState({
     password: "",
@@ -22,9 +26,6 @@ function PasswordResetForm({ userLoggedIn }) {
   });
   const [formErrors, setFormErrors] = useState({});
   const [formIsValid, setFormIsValid] = useState(false);
-
-  // Global variables
-  const hostOriginURL = window.location.origin;
 
   /**
    * Update form data on change of input value
@@ -73,23 +74,6 @@ function PasswordResetForm({ userLoggedIn }) {
   }, [formErrors, formValues]);
 
   /**
-   * Update user password in the db
-   * @param {object} donnees New password value
-   * @returns {Promise} Promise object represents the updated user
-   */
-  const updatePassword = async (password) => {
-    return await axios.put(
-      `${hostOriginURL}/api/custom-auth/resetPassword`,
-      password,
-      {
-        headers: {
-          Authorization: "Bearer " + userLoggedIn.access_token,
-        },
-      }
-    );
-  };
-
-  /**
    * Update user informations on client side after update on server.
    */
   function handleUpdatePassword(e) {
@@ -97,8 +81,8 @@ function PasswordResetForm({ userLoggedIn }) {
     const arrayLocation = window.location.pathname.split("/");
     const tempPassword = arrayLocation[3];
     formValues.tempPassword = tempPassword;
-    updatePassword(formValues)
-      .then((response) => {
+    updatePassword(formValues, user)
+      .then(() => {
         navigate("/dashboard/profil", {
           state: {
             success_message: "Votre mot de passe a bien été modifié",
@@ -112,8 +96,8 @@ function PasswordResetForm({ userLoggedIn }) {
 
   return (
     <div className="PasswordReset">
-      <h2>Nouveau mot de passe</h2>
-      <Card>
+      <h2 className="PasswordReset-title">NOUVEAU MOT DE PASSE</h2>
+      <Card className="PasswordResetForm-card">
         <form className="PasswordResetForm" onSubmit={handleUpdatePassword}>
           <TextField
             className="textField"
@@ -151,8 +135,9 @@ function PasswordResetForm({ userLoggedIn }) {
           </TextField>
           <Button
             className="valider"
-            variant="contained"
+            variant="outlined"
             type="submit"
+            style={{ color: "#6a3352", marginTop: "2vh" }}
             disabled={!formIsValid}
           >
             Valider

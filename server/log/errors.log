@@ -1369,3 +1369,314 @@
   level: 'error',
   timestamp: '2022-11-25T21:08:03.370Z'
 }
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/models/user.js:57
+      match: /^[A-Za-z0-9]{8}$/, "Wrong format"],
+                                               ^
+  
+  SyntaxError: Unexpected token ']'
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/users.js:7:50)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: "uncaughtException: Unexpected token ']'\n" +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/models/user.js:57\n' +
+    '    match: /^[A-Za-z0-9]{8}$/, "Wrong format"],\n' +
+    '                                             ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token ']'\n" +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/users.js:7:50)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/models/user.js:57\n' +
+    '    match: /^[A-Za-z0-9]{8}$/, "Wrong format"],\n' +
+    '                                             ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token ']'\n" +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/users.js:7:50)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 11:16:56 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 1872,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 74285056,
+      heapTotal: 57524224,
+      heapUsed: 32465992,
+      external: 25529711,
+      arrayBuffers: 19692328
+    }
+  },
+  os: {
+    loadavg: [ 2.85107421875, 3.5322265625, 10.9033203125 ],
+    uptime: 2161
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 50,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/users.js',
+      function: null,
+      line: 7,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T16:16:56.307Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/models/user.js:112
+      tempPassword: Joi.string().required();
+                                           ^
+  
+  SyntaxError: Unexpected token ';'
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/users.js:12:5)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: "uncaughtException: Unexpected token ';'\n" +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/models/user.js:112\n' +
+    '    tempPassword: Joi.string().required();\n' +
+    '                                         ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token ';'\n" +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/users.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/models/user.js:112\n' +
+    '    tempPassword: Joi.string().required();\n' +
+    '                                         ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token ';'\n" +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/users.js:12:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 11:51:19 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 2563,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 74674176,
+      heapTotal: 57524224,
+      heapUsed: 32544176,
+      external: 23225531,
+      arrayBuffers: 19692283
+    }
+  },
+  os: { loadavg: [ 3.25341796875, 3.142578125, 3.69921875 ], uptime: 4224 },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/users.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T16:51:19.816Z'
+}
