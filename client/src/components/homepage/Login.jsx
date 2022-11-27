@@ -3,11 +3,12 @@ import { React, useState, useContext } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { TextField, Button, Alert, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import axios from "axios";
 // Styles
 import "./Form.scss";
 // Contexts
 import UserContext from "../../context/userContext";
+// DB Requests
+import { loggingIn } from "../../dbRequests/users";
 
 /**
  * Login Component.
@@ -29,9 +30,6 @@ function Login() {
     password: "",
   });
 
-  // Global variables
-  const hostOriginURL = "http://localhost:3000";
-
   /**
    * Update form data on change of input value
    * @param {object} e Object event type
@@ -40,15 +38,6 @@ function Login() {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   }
-
-  /**
-   * Update user password in the db
-   * @param {object} identifiants Credentials values
-   * @returns {Promise} Promise object represents the user logged in
-   */
-  const loggingIn = async (credentials) => {
-    return await axios.post(`${hostOriginURL}/api/auth`, credentials);
-  };
 
   /**
    * Handle connection on client side. Set user logged in in local storage.

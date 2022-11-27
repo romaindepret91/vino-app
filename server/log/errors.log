@@ -1680,3 +1680,4978 @@
   ],
   timestamp: '2022-11-26T16:51:19.816Z'
 }
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/routes/auth.js:35
+      const token = user.generateAuthToken();
+      ^^^^^
+  
+  SyntaxError: Unexpected token 'const'
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:6:14)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: "uncaughtException: Unexpected token 'const'\n" +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/auth.js:35\n' +
+    '    const token = user.generateAuthToken();\n' +
+    '    ^^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token 'const'\n" +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:6:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/auth.js:35\n' +
+    '    const token = user.generateAuthToken();\n' +
+    '    ^^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token 'const'\n" +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:6:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 14:07:55 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 3217,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 82792448,
+      heapTotal: 58834944,
+      heapUsed: 40791016,
+      external: 24556072,
+      arrayBuffers: 20308770
+    }
+  },
+  os: {
+    loadavg: [ 2.3662109375, 2.4560546875, 2.7255859375 ],
+    uptime: 12420
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T19:07:55.279Z'
+}
+{
+  message: 'res.header.get is not a function',
+  level: 'error',
+  timestamp: '2022-11-26T20:28:00.433Z'
+}
+{
+  message: 'res.header.get is not a function',
+  level: 'error',
+  timestamp: '2022-11-26T20:28:02.038Z'
+}
+{
+  message: 'res.header.get is not a function',
+  level: 'error',
+  timestamp: '2022-11-26T20:28:05.254Z'
+}
+{
+  message: 'res.header.get is not a function',
+  level: 'error',
+  timestamp: '2022-11-26T20:28:34.208Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:29:55.221Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:29:57.987Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:30:01.849Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:30:32.781Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:30:32.795Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:30:34.758Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:30:34.777Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:30:38.507Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:30:38.521Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:31:04.350Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:31:04.361Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:31:06.356Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:31:06.363Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:31:10.416Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:31:10.422Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:31:58.878Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:31:58.891Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:32:00.890Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:32:00.898Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:32:14.700Z'
+}
+{
+  message: 'Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2022-11-26T20:32:14.709Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:9
+  import crud from "express-crud-router";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:9\n' +
+    'import crud from "express-crud-router";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:9\n' +
+    'import crud from "express-crud-router";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 16:13:42 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 6317,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 39645184,
+      heapTotal: 17686528,
+      heapUsed: 10066552,
+      external: 1736071,
+      arrayBuffers: 159799
+    }
+  },
+  os: {
+    loadavg: [ 2.52197265625, 2.560546875, 2.7080078125 ],
+    uptime: 19967
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T21:13:42.478Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:9
+  import crud from "express-crud-router";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:9\n' +
+    'import crud from "express-crud-router";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:9\n' +
+    'import crud from "express-crud-router";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 16:16:55 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 6418,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 40751104,
+      heapTotal: 17162240,
+      heapUsed: 9825736,
+      external: 1736071,
+      arrayBuffers: 151607
+    }
+  },
+  os: {
+    loadavg: [ 3.087890625, 2.73779296875, 2.7451171875 ],
+    uptime: 20160
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T21:16:55.734Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:9
+  import crud from "express-crud-router";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:9\n' +
+    'import crud from "express-crud-router";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:9\n' +
+    'import crud from "express-crud-router";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 16:19:41 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 6462,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 40775680,
+      heapTotal: 17686528,
+      heapUsed: 9902096,
+      external: 1736071,
+      arrayBuffers: 151607
+    }
+  },
+  os: { loadavg: [ 3.3359375, 2.73828125, 2.73095703125 ], uptime: 20326 },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T21:19:41.749Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:9
+  import crud from "express-crud-router";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:9\n' +
+    'import crud from "express-crud-router";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:9\n' +
+    'import crud from "express-crud-router";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 16:20:27 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 6486,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 39747584,
+      heapTotal: 17686528,
+      heapUsed: 9955032,
+      external: 1736071,
+      arrayBuffers: 151607
+    }
+  },
+  os: {
+    loadavg: [ 3.0751953125, 2.71826171875, 2.720703125 ],
+    uptime: 20372
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T21:20:27.451Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:9
+  import crud from "express-crud-router";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:9\n' +
+    'import crud from "express-crud-router";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:9\n' +
+    'import crud from "express-crud-router";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 16:25:20 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 6593,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 39682048,
+      heapTotal: 17686528,
+      heapUsed: 10073880,
+      external: 1736071,
+      arrayBuffers: 159799
+    }
+  },
+  os: { loadavg: [ 2.96875, 2.82421875, 2.7509765625 ], uptime: 20665 },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T21:25:20.682Z'
+}
+{
+  message: 'Query was already executed: Bottle.find({})',
+  level: 'error',
+  timestamp: '2022-11-26T21:37:02.935Z'
+}
+{
+  message: 'Query was already executed: Bottle.find({})',
+  level: 'error',
+  timestamp: '2022-11-26T21:37:06.534Z'
+}
+{
+  message: 'Query was already executed: Bottle.find({})',
+  level: 'error',
+  timestamp: '2022-11-26T21:37:10.415Z'
+}
+{
+  message: 'Query was already executed: Bottle.find({})',
+  level: 'error',
+  timestamp: '2022-11-26T21:37:34.040Z'
+}
+{
+  message: 'Query was already executed: Bottle.find({})',
+  level: 'error',
+  timestamp: '2022-11-26T21:38:43.227Z'
+}
+{
+  message: 'Query was already executed: Bottle.find({})',
+  level: 'error',
+  timestamp: '2022-11-26T21:38:49.307Z'
+}
+{
+  message: 'Query was already executed: Bottle.find({})',
+  level: 'error',
+  timestamp: '2022-11-26T21:38:52.949Z'
+}
+{
+  message: 'Query was already executed: Bottle.find({})',
+  level: 'error',
+  timestamp: '2022-11-26T21:39:34.441Z'
+}
+{
+  message: 'Query was already executed: Bottle.find({})',
+  level: 'error',
+  timestamp: '2022-11-26T21:41:18.724Z'
+}
+{
+  message: 'Query was already executed: Bottle.find({})',
+  level: 'error',
+  timestamp: '2022-11-26T21:41:22.231Z'
+}
+{
+  message: 'Query was already executed: Bottle.find({})',
+  level: 'error',
+  timestamp: '2022-11-26T21:41:25.586Z'
+}
+{
+  message: 'Query was already executed: Bottle.find({})',
+  level: 'error',
+  timestamp: '2022-11-26T21:41:55.667Z'
+}
+{
+  message: 'Query was already executed: Bottle.find({})',
+  level: 'error',
+  timestamp: '2022-11-26T21:42:06.853Z'
+}
+{
+  error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+      at new NodeError (node:internal/errors:371:5)
+      at ServerResponse.setHeader (node:_http_outgoing:576:11)
+      at /Applications/MAMP/htdocs/projet-stage/vino/server/routes/bottles.js:20:11
+      at /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/mongoose/lib/model.js:5213:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+    code: 'ERR_HTTP_HEADERS_SENT'
+  },
+  level: 'error',
+  message: 'uncaughtException: Cannot set headers after they are sent to the client\n' +
+    'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:371:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at /Applications/MAMP/htdocs/projet-stage/vino/server/routes/bottles.js:20:11\n' +
+    '    at /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/mongoose/lib/model.js:5213:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  stack: 'Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n' +
+    '    at new NodeError (node:internal/errors:371:5)\n' +
+    '    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n' +
+    '    at /Applications/MAMP/htdocs/projet-stage/vino/server/routes/bottles.js:20:11\n' +
+    '    at /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/mongoose/lib/model.js:5213:18\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  exception: true,
+  date: 'Sat Nov 26 2022 16:42:06 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 6976,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 86487040,
+      heapTotal: 61194240,
+      heapUsed: 33022400,
+      external: 23842038,
+      arrayBuffers: 18293175
+    }
+  },
+  os: {
+    loadavg: [ 4.70263671875, 3.4677734375, 3.08154296875 ],
+    uptime: 21671
+  },
+  trace: [
+    {
+      column: 5,
+      file: 'node:internal/errors',
+      function: 'new NodeError',
+      line: 371,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:_http_outgoing',
+      function: 'ServerResponse.setHeader',
+      line: 576,
+      method: 'setHeader',
+      native: false
+    },
+    {
+      column: 11,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/bottles.js',
+      function: null,
+      line: 20,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/mongoose/lib/model.js',
+      function: null,
+      line: 5213,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 78,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T21:42:06.872Z'
+}
+{
+  message: 'Query was already executed: Bottle.find({})',
+  level: 'error',
+  timestamp: '2022-11-26T21:43:07.610Z'
+}
+{
+  message: 'Query was already executed: Bottle.find({})',
+  level: 'error',
+  timestamp: '2022-11-26T21:43:10.238Z'
+}
+{
+  error: ReferenceError: admin is not defined
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:40:10)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10),
+  level: 'error',
+  message: 'uncaughtException: admin is not defined\n' +
+    'ReferenceError: admin is not defined\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:40:10)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)',
+  stack: 'ReferenceError: admin is not defined\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:40:10)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)',
+  exception: true,
+  date: 'Sat Nov 26 2022 17:02:14 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 7661,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 81821696,
+      heapTotal: 58834944,
+      heapUsed: 40297440,
+      external: 24551202,
+      arrayBuffers: 20264622
+    }
+  },
+  os: {
+    loadavg: [ 4.47998046875, 3.43701171875, 3.1044921875 ],
+    uptime: 22879
+  },
+  trace: [
+    {
+      column: 10,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      function: null,
+      line: 40,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T22:02:14.663Z'
+}
+{
+  error: ReferenceError: admin is not defined
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:10)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10),
+  level: 'error',
+  message: 'uncaughtException: admin is not defined\n' +
+    'ReferenceError: admin is not defined\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:10)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)',
+  stack: 'ReferenceError: admin is not defined\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:10)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)',
+  exception: true,
+  date: 'Sat Nov 26 2022 17:03:33 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 7698,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 83230720,
+      heapTotal: 58834944,
+      heapUsed: 40309728,
+      external: 24551202,
+      arrayBuffers: 20264622
+    }
+  },
+  os: { loadavg: [ 2.7001953125, 3.158203125, 3.02734375 ], uptime: 22958 },
+  trace: [
+    {
+      column: 10,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T22:03:33.611Z'
+}
+{
+  error: ReferenceError: admin is not defined
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:10)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10),
+  level: 'error',
+  message: 'uncaughtException: admin is not defined\n' +
+    'ReferenceError: admin is not defined\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:10)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)',
+  stack: 'ReferenceError: admin is not defined\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:10)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)',
+  exception: true,
+  date: 'Sat Nov 26 2022 17:03:55 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 7721,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 82821120,
+      heapTotal: 58572800,
+      heapUsed: 40112536,
+      external: 26102115,
+      arrayBuffers: 20256430
+    }
+  },
+  os: {
+    loadavg: [ 2.6240234375, 3.1005859375, 3.00830078125 ],
+    uptime: 22980
+  },
+  trace: [
+    {
+      column: 10,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T22:03:55.432Z'
+}
+{
+  error: ReferenceError: admin is not defined
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:10)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10),
+  level: 'error',
+  message: 'uncaughtException: admin is not defined\n' +
+    'ReferenceError: admin is not defined\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:10)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)',
+  stack: 'ReferenceError: admin is not defined\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:10)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)',
+  exception: true,
+  date: 'Sat Nov 26 2022 17:11:22 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 7878,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 82432000,
+      heapTotal: 58834944,
+      heapUsed: 40243744,
+      external: 24551202,
+      arrayBuffers: 20256430
+    }
+  },
+  os: {
+    loadavg: [ 2.787109375, 2.5791015625, 2.740234375 ],
+    uptime: 23427
+  },
+  trace: [
+    {
+      column: 10,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T22:11:22.130Z'
+}
+{
+  error: ReferenceError: admin is not defined
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:10)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10),
+  level: 'error',
+  message: 'uncaughtException: admin is not defined\n' +
+    'ReferenceError: admin is not defined\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:10)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)',
+  stack: 'ReferenceError: admin is not defined\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:10)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)',
+  exception: true,
+  date: 'Sat Nov 26 2022 17:11:34 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 7895,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 83017728,
+      heapTotal: 58572800,
+      heapUsed: 40269136,
+      external: 23797825,
+      arrayBuffers: 20295708
+    }
+  },
+  os: {
+    loadavg: [ 2.74560546875, 2.576171875, 2.7373046875 ],
+    uptime: 23439
+  },
+  trace: [
+    {
+      column: 10,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T22:11:34.641Z'
+}
+{
+  message: 'User is not defined',
+  level: 'error',
+  timestamp: '2022-11-26T22:21:15.483Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10
+  import fetch from "node-fetch";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10\n' +
+    'import fetch from "node-fetch";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10\n' +
+    'import fetch from "node-fetch";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 17:56:17 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 8947,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 82747392,
+      heapTotal: 58834944,
+      heapUsed: 40327008,
+      external: 23789633,
+      arrayBuffers: 20287516
+    }
+  },
+  os: {
+    loadavg: [ 2.55859375, 2.6337890625, 2.82177734375 ],
+    uptime: 26122
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T22:56:17.410Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10
+  import { response } from "express";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10\n' +
+    'import { response } from "express";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10\n' +
+    'import { response } from "express";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 17:59:52 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 9025,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 82415616,
+      heapTotal: 58834944,
+      heapUsed: 40362952,
+      external: 24543010,
+      arrayBuffers: 20264577
+    }
+  },
+  os: {
+    loadavg: [ 4.61083984375, 3.2265625, 3.01708984375 ],
+    uptime: 26337
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T22:59:52.299Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10
+  import { response } from "express";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10\n' +
+    'import { response } from "express";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10\n' +
+    'import { response } from "express";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 18:00:00 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 9046,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 83914752,
+      heapTotal: 58834944,
+      heapUsed: 40178128,
+      external: 24561646,
+      arrayBuffers: 20264577
+    }
+  },
+  os: {
+    loadavg: [ 4.4013671875, 3.2060546875, 3.0107421875 ],
+    uptime: 26345
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T23:00:00.198Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10
+  import fetch from "node-fetch";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10\n' +
+    'import fetch from "node-fetch";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10\n' +
+    'import fetch from "node-fetch";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 18:01:23 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 9071,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 82575360,
+      heapTotal: 58834944,
+      heapUsed: 40132592,
+      external: 24515754,
+      arrayBuffers: 20248238
+    }
+  },
+  os: {
+    loadavg: [ 3.14111328125, 3.15234375, 3.01025390625 ],
+    uptime: 26428
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-26T23:01:23.829Z'
+}
+{
+  message: 'Unexpected token < in JSON at position 0',
+  level: 'error',
+  timestamp: '2022-11-26T23:06:16.831Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-26T23:56:36.032Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-26T23:58:13.267Z'
+}
+{
+  message: 'axios is not defined',
+  level: 'error',
+  timestamp: '2022-11-27T00:01:34.052Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:14
+  import axios from "axios";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:14\n' +
+    'import axios from "axios";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:14\n' +
+    'import axios from "axios";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 19:02:48 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 10315,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 81780736,
+      heapTotal: 58572800,
+      heapUsed: 39977776,
+      external: 24543010,
+      arrayBuffers: 20256430
+    }
+  },
+  os: {
+    loadavg: [ 3.80859375, 2.90185546875, 2.72705078125 ],
+    uptime: 30113
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-27T00:02:48.150Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:14
+  import axios from "axios";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:14\n' +
+    'import axios from "axios";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:14\n' +
+    'import axios from "axios";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 19:05:03 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 10357,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 82300928,
+      heapTotal: 58572800,
+      heapUsed: 40073600,
+      external: 23789633,
+      arrayBuffers: 20256430
+    }
+  },
+  os: {
+    loadavg: [ 3.19677734375, 3.1943359375, 2.88525390625 ],
+    uptime: 30248
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-27T00:05:03.516Z'
+}
+{
+  message: '$ is not defined',
+  level: 'error',
+  timestamp: '2022-11-27T00:07:58.611Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-27T00:14:21.235Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-27T00:14:49.494Z'
+}
+{
+  message: 'cheerio.load() expects a string',
+  level: 'error',
+  timestamp: '2022-11-27T00:16:06.094Z'
+}
+{
+  message: 'cheerio.load() expects a string',
+  level: 'error',
+  timestamp: '2022-11-27T00:17:18.592Z'
+}
+{
+  message: 'cheerio.load() expects a string',
+  level: 'error',
+  timestamp: '2022-11-27T00:17:34.199Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-27T00:17:54.971Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-27T00:19:38.146Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-27T00:19:38.504Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-27T00:21:24.751Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-27T00:21:42.589Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-27T00:23:14.876Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-27T00:27:12.964Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-27T00:31:43.663Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-27T00:34:08.453Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-27T00:35:18.896Z'
+}
+{
+  error: Error: Cannot find module 'jsdom'
+  Require stack:
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:15:19)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'jsdom'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    "Error: Cannot find module 'jsdom'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:15:19)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module 'jsdom'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:15:19)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Sat Nov 26 2022 19:45:43 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 11531,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 89825280,
+      heapTotal: 61456384,
+      heapUsed: 38088184,
+      external: 25744432,
+      arrayBuffers: 19368507
+    }
+  },
+  os: {
+    loadavg: [ 4.1455078125, 3.3818359375, 3.0654296875 ],
+    uptime: 32688
+  },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      function: null,
+      line: 15,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-27T00:45:43.112Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-27T00:46:39.996Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-27T00:47:04.683Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-27T00:48:42.964Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-27T00:51:31.496Z'
+}
+{
+  message: 'The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function initialize',
+  level: 'error',
+  timestamp: '2022-11-27T00:53:29.293Z'
+}
+{
+  error: Error: Cannot find module 'cheerio'
+  Require stack:
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:17)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'cheerio'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    "Error: Cannot find module 'cheerio'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:17)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module 'cheerio'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:17)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Sat Nov 26 2022 19:58:33 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 11945,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 83501056,
+      heapTotal: 58834944,
+      heapUsed: 40243928,
+      external: 24509194,
+      arrayBuffers: 20248238
+    }
+  },
+  os: {
+    loadavg: [ 2.384765625, 2.59765625, 2.79736328125 ],
+    uptime: 33458
+  },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 17,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-27T00:58:33.555Z'
+}
+{
+  error: Error: Cannot find module 'cheerio'
+  Require stack:
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:17)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'cheerio'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    "Error: Cannot find module 'cheerio'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:17)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module 'cheerio'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:17)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Sat Nov 26 2022 19:58:52 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 11984,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 82493440,
+      heapTotal: 58834944,
+      heapUsed: 40321016,
+      external: 26102115,
+      arrayBuffers: 20264622
+    }
+  },
+  os: {
+    loadavg: [ 4.7021484375, 3.0703125, 2.95947265625 ],
+    uptime: 33477
+  },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 17,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-27T00:58:52.455Z'
+}
+{
+  error: Error: Cannot find module 'cheerio'
+  Require stack:
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:17)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'cheerio'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    "Error: Cannot find module 'cheerio'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:17)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module 'cheerio'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:17)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Sat Nov 26 2022 19:59:04 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 12009,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 82239488,
+      heapTotal: 58834944,
+      heapUsed: 40235544,
+      external: 24896826,
+      arrayBuffers: 20256430
+    }
+  },
+  os: {
+    loadavg: [ 4.52001953125, 3.083984375, 2.96533203125 ],
+    uptime: 33489
+  },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 17,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-27T00:59:04.957Z'
+}
+{
+  error: Error: Cannot find module 'cheerio'
+  Require stack:
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:17)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'cheerio'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    "Error: Cannot find module 'cheerio'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:17)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module 'cheerio'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:12:17)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Sat Nov 26 2022 19:59:22 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 12037,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 83640320,
+      heapTotal: 58834944,
+      heapUsed: 40170616,
+      external: 24551202,
+      arrayBuffers: 20256430
+    }
+  },
+  os: {
+    loadavg: [ 3.94482421875, 3.04541015625, 2.95361328125 ],
+    uptime: 33507
+  },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 17,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-27T00:59:22.697Z'
+}
+{
+  error: Error: Cannot find module 'pretty'
+  Require stack:
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js
+  - /Applications/MAMP/htdocs/projet-stage/vino/server/index.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:13:16)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'pretty'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    "Error: Cannot find module 'pretty'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:13:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module 'pretty'\n" +
+    'Require stack:\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js\n' +
+    '- /Applications/MAMP/htdocs/projet-stage/vino/server/index.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:13:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Sat Nov 26 2022 19:59:54 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 12096,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 86777856,
+      heapTotal: 60932096,
+      heapUsed: 35489344,
+      external: 21202792,
+      arrayBuffers: 18964878
+    }
+  },
+  os: {
+    loadavg: [ 3.7705078125, 3.10009765625, 2.97705078125 ],
+    uptime: 33539
+  },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      function: null,
+      line: 13,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-27T00:59:54.806Z'
+}
+{
+  error: Error [ERR_REQUIRE_ESM]: require() of ES Module /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/website-scraper/index.mjs not supported.
+  Instead change the require of /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/website-scraper/index.mjs to a dynamic import() which is available in all CommonJS modules.
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10:16)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1) {
+    code: 'ERR_REQUIRE_ESM'
+  },
+  level: 'error',
+  message: 'uncaughtException: require() of ES Module /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/website-scraper/index.mjs not supported.\n' +
+    'Instead change the require of /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/website-scraper/index.mjs to a dynamic import() which is available in all CommonJS modules.\n' +
+    'Error [ERR_REQUIRE_ESM]: require() of ES Module /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/website-scraper/index.mjs not supported.\n' +
+    'Instead change the require of /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/website-scraper/index.mjs to a dynamic import() which is available in all CommonJS modules.\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10:16)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)',
+  stack: 'Error [ERR_REQUIRE_ESM]: require() of ES Module /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/website-scraper/index.mjs not supported.\n' +
+    'Instead change the require of /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/website-scraper/index.mjs to a dynamic import() which is available in all CommonJS modules.\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10:16)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)',
+  exception: true,
+  date: 'Sat Nov 26 2022 20:00:51 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 12176,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 82907136,
+      heapTotal: 58572800,
+      heapUsed: 40171296,
+      external: 24565668,
+      arrayBuffers: 20272769
+    }
+  },
+  os: {
+    loadavg: [ 4.1142578125, 3.369140625, 3.08740234375 ],
+    uptime: 33596
+  },
+  trace: [
+    {
+      column: 16,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-11-27T01:00:51.824Z'
+}
+{
+  error: Error [ERR_REQUIRE_ESM]: require() of ES Module /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/website-scraper/index.mjs not supported.
+  Instead change the require of /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/website-scraper/index.mjs to a dynamic import() which is available in all CommonJS modules.
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10:16)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1) {
+    code: 'ERR_REQUIRE_ESM'
+  },
+  level: 'error',
+  message: 'uncaughtException: require() of ES Module /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/website-scraper/index.mjs not supported.\n' +
+    'Instead change the require of /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/website-scraper/index.mjs to a dynamic import() which is available in all CommonJS modules.\n' +
+    'Error [ERR_REQUIRE_ESM]: require() of ES Module /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/website-scraper/index.mjs not supported.\n' +
+    'Instead change the require of /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/website-scraper/index.mjs to a dynamic import() which is available in all CommonJS modules.\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10:16)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)',
+  stack: 'Error [ERR_REQUIRE_ESM]: require() of ES Module /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/website-scraper/index.mjs not supported.\n' +
+    'Instead change the require of /Applications/MAMP/htdocs/projet-stage/vino/server/node_modules/website-scraper/index.mjs to a dynamic import() which is available in all CommonJS modules.\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10:16)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:6:1)',
+  exception: true,
+  date: 'Sat Nov 26 2022 20:02:40 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 12222,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 83841024,
+      heapTotal: 58834944,
+      heapUsed: 40448712,
+      external: 26102115,
+      arrayBuffers: 20264622
+    }
+  },
+  os: {
+    loadavg: [ 2.99267578125, 3.166015625, 3.03857421875 ],
+    uptime: 33705
+  },
+  trace: [
+    {
+      column: 16,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-11-27T01:02:40.543Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10
+  import scrape from "website-scraper";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10\n' +
+    'import scrape from "website-scraper";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10\n' +
+    'import scrape from "website-scraper";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 20:03:42 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 12259,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 82153472,
+      heapTotal: 58834944,
+      heapUsed: 39891392,
+      external: 23781441,
+      arrayBuffers: 20214952
+    }
+  },
+  os: {
+    loadavg: [ 3.49609375, 3.2939453125, 3.0947265625 ],
+    uptime: 33767
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-27T01:03:42.073Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10
+  const scrape = await import("website-scraper");
+                 ^^^^^
+  
+  SyntaxError: await is only valid in async functions and the top level bodies of modules
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: await is only valid in async functions and the top level bodies of modules\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10\n' +
+    'const scrape = await import("website-scraper");\n' +
+    '               ^^^^^\n' +
+    '\n' +
+    'SyntaxError: await is only valid in async functions and the top level bodies of modules\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10\n' +
+    'const scrape = await import("website-scraper");\n' +
+    '               ^^^^^\n' +
+    '\n' +
+    'SyntaxError: await is only valid in async functions and the top level bodies of modules\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 20:08:54 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 12349,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 82743296,
+      heapTotal: 58572800,
+      heapUsed: 39866040,
+      external: 23789633,
+      arrayBuffers: 20248238
+    }
+  },
+  os: { loadavg: [ 2.765625, 2.8408203125, 2.9228515625 ], uptime: 34079 },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-27T01:08:54.752Z'
+}
+{
+  message: 'scrape is not a function',
+  level: 'error',
+  timestamp: '2022-11-27T01:09:34.728Z'
+}
+{
+  message: 'scrape is not a function',
+  level: 'error',
+  timestamp: '2022-11-27T01:10:16.102Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10
+  const scrape = await import("website-scraper");
+                 ^^^^^
+  
+  SyntaxError: await is only valid in async functions and the top level bodies of modules
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: await is only valid in async functions and the top level bodies of modules\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10\n' +
+    'const scrape = await import("website-scraper");\n' +
+    '               ^^^^^\n' +
+    '\n' +
+    'SyntaxError: await is only valid in async functions and the top level bodies of modules\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10\n' +
+    'const scrape = await import("website-scraper");\n' +
+    '               ^^^^^\n' +
+    '\n' +
+    'SyntaxError: await is only valid in async functions and the top level bodies of modules\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js:4:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 20:10:33 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 12432,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 82427904,
+      heapTotal: 58834944,
+      heapUsed: 40139528,
+      external: 24543010,
+      arrayBuffers: 20256430
+    }
+  },
+  os: {
+    loadavg: [ 3.056640625, 2.837890625, 2.90576171875 ],
+    uptime: 34178
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/routes.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-27T01:10:33.255Z'
+}
+{
+  message: 'scrape is not a function',
+  level: 'error',
+  timestamp: '2022-11-27T01:10:55.086Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/routes/scrape.js:1
+  import scrape from "website-scraper";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/auth.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/scrape.js:1\n' +
+    'import scrape from "website-scraper";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/auth.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/scrape.js:1\n' +
+    'import scrape from "website-scraper";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/auth.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 20:13:35 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 12558,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 83132416,
+      heapTotal: 58834944,
+      heapUsed: 40657480,
+      external: 23802695,
+      arrayBuffers: 20269492
+    }
+  },
+  os: {
+    loadavg: [ 4.38720703125, 3.43115234375, 3.12353515625 ],
+    uptime: 34360
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/auth.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-27T01:13:35.367Z'
+}
+{
+  error: /Applications/MAMP/htdocs/projet-stage/vino/server/routes/scrape.js:1
+  import scrape from "website-scraper";
+  ^^^^^^
+  
+  SyntaxError: Cannot use import statement outside a module
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+      at Module._compile (node:internal/modules/cjs/loader:1065:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10:16)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14),
+  level: 'error',
+  message: 'uncaughtException: Cannot use import statement outside a module\n' +
+    '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/scrape.js:1\n' +
+    'import scrape from "website-scraper";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  stack: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/scrape.js:1\n' +
+    'import scrape from "website-scraper";\n' +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1031:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1065:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js:10:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)',
+  exception: true,
+  date: 'Sat Nov 26 2022 20:13:43 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 12586,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 83861504,
+      heapTotal: 58834944,
+      heapUsed: 40396808,
+      external: 26102115,
+      arrayBuffers: 20264622
+    }
+  },
+  os: {
+    loadavg: [ 4.32080078125, 3.44921875, 3.13330078125 ],
+    uptime: 34368
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1031,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1065,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/routes/admin.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-11-27T01:13:43.980Z'
+}

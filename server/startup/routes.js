@@ -1,6 +1,7 @@
 // ----- MIDDLEWARE ROUTES -----
 const express = require("express");
 const users = require("../routes/users");
+const admin = require("../routes/admin");
 const cellars = require("../routes/cellars");
 const bottles = require("../routes/bottles");
 const auth = require("../routes/auth");
@@ -14,6 +15,7 @@ module.exports = function (app) {
   app.use(express.json());
   // Routes middlewares
   app.use("/api/users", users);
+  app.use("/api/admin", admin);
   app.use("/api/cellars", cellars);
   app.use("/api/bottles", bottles);
   app.use("/api/auth", auth);

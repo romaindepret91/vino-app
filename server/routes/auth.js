@@ -20,6 +20,7 @@ router.post(
     let user = await User.findOne({ email: req.body.email });
     if (!user) return res.status(400).send("Invalid email or password");
 
+    // Check password
     const validPassword = await bcrypt.compare(
       req.body.password,
       user.password
@@ -31,7 +32,55 @@ router.post(
     const token = user.generateAuthToken();
     const resBody = {
       access_token: token,
-      user: _.pick(user, ["_id", "username", "email", "firstname", "surname"]),
+      user: _.pick(user, [
+        "_id",
+        "username",
+        "email",
+        "firstname",
+        "surname",
+        "isAdmin",
+      ]),
+    };
+
+    res.send(resBody);
+  })
+);
+// ----- AUTHENTICATE ADMIN ------
+router.post(
+  "/admin",
+  catchErrors(async (req, res) => {
+    // Data validation
+    const result = validate(req.body);
+    if (result.error)
+      return res.status(400).send(result.error.details[0].message);
+
+    // Check if email sent exists in db
+    let user = await User.findOne({ email: req.body.email });
+    if (!user) return res.status(400).send("Invalid email or password");
+
+    // Check password
+    const validPassword = await bcrypt.compare(
+      req.body.password,
+      user.password
+    );
+    if (!validPassword)
+      return res.status(400).send("Invalid email or password");
+
+    // Check if admin
+    if (!user.isAdmin) return res.status(403).send("Access denied");
+
+    // Generate JSON web token
+    const token = user.generateAuthToken();
+    const resBody = {
+      access_token: token,
+      admin: _.pick(user, [
+        "_id",
+        "username",
+        "email",
+        "firstname",
+        "surname",
+        "isAdmin",
+      ]),
     };
 
     res.send(resBody);

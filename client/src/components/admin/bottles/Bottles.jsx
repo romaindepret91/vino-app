@@ -24,16 +24,17 @@ function Bottles() {
   const notify = useNotify();
 
   // Global variables
-  const hostOriginURL = window.location.origin;
+  const hostOriginURL = "http://localhost:3000";
 
   /**
    * Import the SAQ data from website
    * @returns {Promise} Promise object that represents the catalogue of bottles
    */
   const importSAQ = async () => {
-    return await axios.get(`${hostOriginURL}/api/saq`, {
+    return await axios.get(`${hostOriginURL}/api/admin/saq`, {
       headers: {
-        Authorization: "Bearer " + options.userAdmin["access_token"],
+        "x-auth-token": options.admin["access_token"],
+        isAdmin: true,
       },
     });
   };
@@ -43,13 +44,14 @@ function Bottles() {
    */
   function handleImportSAQ() {
     importSAQ().then((response) => {
-      const imported = response.data["resultatInsertion"]["inserees"];
-      const rejected = response.data["resultatInsertion"]["rejetees"];
-      options.setBottles(response.data["bouteilles"]);
-      refresh();
-      notify(
-        `Importation: ${imported} bouteille(s) insérée(s) et ${rejected} bouteille(s) rejetée(s)`
-      );
+      console.log(response.data);
+      // const imported = response.data["resultatInsertion"]["inserees"];
+      // const rejected = response.data["resultatInsertion"]["rejetees"];
+      // options.setBottles(response.data["bouteilles"]);
+      // refresh();
+      // notify(
+      //   `Importation: ${imported} bouteille(s) insérée(s) et ${rejected} bouteille(s) rejetée(s)`
+      // );
     });
   }
 
@@ -64,14 +66,14 @@ function Bottles() {
         }
       >
         <TextField source="id" />
-        <TextField source="nom_bouteille" />
-        <TextField source="code_saq" />
-        <TextField source="pays" />
+        <TextField source="name" />
+        <TextField source="saqCode" />
+        <TextField source="country" />
         <TextField source="description" />
-        <TextField source="prix_saq" />
+        <TextField source="saqPrice" />
         <TextField source="format" />
-        <TextField source="degre_alcool" />
-        <TextField source="producteur" />
+        <TextField source="alcool" />
+        <TextField source="maker" />
         <TextField source="region" />
         <TextField source="millesime" />
       </Datagrid>

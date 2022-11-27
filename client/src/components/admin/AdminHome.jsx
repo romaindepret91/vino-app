@@ -17,40 +17,40 @@ import Users from "./users/Users";
  * @returns {div} The AdminHome
  */
 function AdminHome({ setBottles, bottles }) {
-    // State variables and hooks
-    const navigate = useNavigate();
+  // State variables and hooks
+  const navigate = useNavigate();
 
-    // Global variables
-    const userAdmin = JSON.parse(localStorage.getItem("adminUser")) || null;
+  // Global variables
+  const admin = JSON.parse(localStorage.getItem("admin")) || null;
 
-    /**
-     * Redirect to admin dashboard on reload page
-     */
-    useEffect(() => {
-        const adminUser = localStorage.getItem("adminUser") || null;
-        if (window.location.pathname !== "/admin/login" && !adminUser)
-            navigate("/admin/login", {});
-    }, []);
+  /**
+   * Redirect to admin dashboard on reload page
+   */
+  useEffect(() => {
+    const admin = localStorage.getItem("admin") || null;
+    if (window.location.pathname !== "/admin/login" && !admin)
+      navigate("/admin/login", {});
+  }, []);
 
-    return (
-        <Admin
-            dashboard={Dashboard}
-            dataProvider={dataProvider}
-            authProvider={authProvider}
-            basename="/admin"
-        >
-            <Resource
-                name="bottles"
-                list={Bottles}
-                options={{
-                    setBottles: setBottles,
-                    bottles: bottles,
-                    userAdmin: userAdmin,
-                }}
-            />
-            <Resource name="users" list={Users} />
-        </Admin>
-    );
+  return (
+    <Admin
+      dashboard={Dashboard}
+      dataProvider={dataProvider}
+      authProvider={authProvider}
+      basename="/admin"
+    >
+      <Resource
+        name="bottles"
+        list={Bottles}
+        options={{
+          setBottles: setBottles,
+          bottles: bottles,
+          admin: admin,
+        }}
+      />
+      <Resource name="users" list={Users} />
+    </Admin>
+  );
 }
 
 export default AdminHome;

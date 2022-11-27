@@ -2,6 +2,15 @@ import axios from "axios";
 const hostOriginURL = "http://localhost:3000";
 
 /**
+ * Log user
+ * @param {object} credentials Credentials values
+ * @returns {Promise} Promise object represents the user logged in
+ */
+export async function loggingIn(credentials) {
+  return await axios.post(`${hostOriginURL}/api/auth`, credentials);
+}
+
+/**
  * Update user data in the db
  * @param {object} data New data values
  * @param {object} user User to be updated

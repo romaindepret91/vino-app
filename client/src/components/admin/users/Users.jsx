@@ -7,17 +7,17 @@ import { List, Datagrid, TextField } from "react-admin";
  * @returns {List} The Users
  */
 function Users() {
-    return (
-        <List>
-            <Datagrid bulkActionButtons={false}>
-                <TextField source="id" />
-                <TextField source="name" />
-                <TextField source="email" />
-                <TextField source="prenom" />
-                <TextField source="nom" />
-            </Datagrid>
-        </List>
-    );
+  return (
+    <List>
+      <Datagrid bulkActionButtons={false}>
+        <TextField source="id" />
+        <TextField source="username" />
+        <TextField source="email" />
+        <TextField source="firstname" />
+        <TextField source="surname" />
+      </Datagrid>
+    </List>
+  );
 }
 
 export default Users;

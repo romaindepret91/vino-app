@@ -42,8 +42,10 @@ function App() {
    */
   useEffect(() => {
     setUser(JSON.parse(localStorage.getItem("user")));
-    if (!window.location.pathname.includes("dashboard"))
-      navigate("/dashboard", {});
+    if (user) {
+      if (!window.location.pathname.includes("dashboard"))
+        navigate("/dashboard", {});
+    }
 
     if (adminUser && window.location.pathname.includes("admin"))
       navigate("/admin", {});
