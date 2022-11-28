@@ -7,6 +7,9 @@ const { User } = require("../models/user");
 const auth = require("../middleware/auth");
 const admin = require("../middleware/admin");
 const catchErrors = require("../middleware/catchErrors");
+const axios = require("axios");
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
 
 // ----- GET ALL BOTTLES -----
 router.get(
@@ -30,7 +33,7 @@ router.get(
         millesime: bottle.millesime,
       });
     });
-    res.setHeader("Content-range", "bottles : 0-9/10");
+    res.setHeader("Content-range", `bottles : 0-9/${bottles.length}`);
     res.setHeader("Access-Control-Expose-Headers", "Content-Range");
     res.send(bottlesMap);
   })
@@ -52,7 +55,7 @@ router.get(
         surname: user.surname,
       });
     });
-    res.setHeader("Content-range", "bottles : 0-9/10");
+    res.setHeader("Content-range", "users : 0-9/10");
     res.setHeader("Access-Control-Expose-Headers", "Content-Range");
     res.send(usersMap);
   })
@@ -62,7 +65,117 @@ router.get(
 router.get(
   "/saq",
   [auth, admin],
-  catchErrors(async (req, res) => {})
+  catchErrors(async (req, res) => {
+    let bottlesToReturn = [];
+    let bottlesInserted = 0;
+    let bottlesRejected = 0;
+    let mainPageHtml = await axios("https://www.saq.com/fr/produits/vin");
+    mainPageHtml = mainPageHtml.data;
+    const mainDom = new JSDOM(mainPageHtml);
+    const totalBottles = parseInt(
+      mainDom.window.document.querySelector("#toolbar-amount").lastElementChild
+        .innerHTML
+    );
+    // Number of loops required to go through every pages (24 bottles per page)
+    // const pages = Math.ceil(totalBottles / 24);
+    const pages = 3;
+    // Loop though wine pages
+    for (let i = 1; i <= pages; i++) {
+      let html = await axios.get(`https://www.saq.com/fr/produits/vin?p=${i}`);
+
+      // Retrieve all saq codes from page
+      html = html.data;
+      const dom = new JSDOM(html);
+      const saqCodes = dom.window.document.querySelectorAll(".saq-code");
+      // call to wine page for each wine
+      saqCodes.forEach(async (code) => {
+        const saqCode = code.lastElementChild.innerHTML;
+        let winePageHtml = await axios.get(`https://www.saq.com/fr/${saqCode}`);
+        winePageHtml = winePageHtml.data;
+        const winePageDom = new JSDOM(winePageHtml);
+        // Check if millesime is in page title
+        let millesime = "";
+        if (
+          Number.isInteger(
+            parseInt(
+              winePageDom.window.document
+                .querySelector(".page-title")
+                .innerHTML.trim()
+                .slice(-1)
+            )
+          )
+        )
+          millesime = parseInt(
+            winePageDom.window.document
+              .querySelector(".page-title")
+              .innerHTML.trim()
+              .slice(-4)
+          );
+        let bottle = {
+          name: winePageDom.window.document
+            .querySelector(".page-title")
+            .innerHTML.trim(),
+          type:
+            winePageDom.window.document
+              .querySelector("[data-th='Couleur']")
+              .innerHTML.toLowerCase()
+              .trim() === "rosé"
+              ? "rose"
+              : winePageDom.window.document
+                  .querySelector("[data-th='Couleur']")
+                  .innerHTML.toLowerCase()
+                  .trim(),
+          listed: "Y",
+          country: winePageDom.window.document
+            .querySelector("[data-th='Pays']")
+            .innerHTML.trim(),
+          description: "NR",
+          saqPrice: parseInt(
+            winePageDom.window.document.querySelector("[data-price-amount]")
+              .dataset.priceAmount
+          ),
+          saqCode: saqCode,
+          saqUrl: `https://www.saq.com/fr/${saqCode}`,
+          saqImg: winePageDom.window.document
+            .querySelector("#mtImageContainer")
+            .querySelector("img").src,
+          format: winePageDom.window.document
+            .querySelector("[data-th='Format']")
+            .innerHTML.trim(),
+          alcool: winePageDom.window.document
+            .querySelector(`[data-th="Degré d'alcool"]`)
+            .innerHTML.trim(),
+          maker: winePageDom.window.document
+            .querySelector(`[data-th="Producteur"]`)
+            .innerHTML.trim(),
+          region: winePageDom.window.document.querySelector(
+            `[data-th="Région"]`
+          )
+            ? winePageDom.window.document
+                .querySelector(`[data-th="Région"]`)
+                .innerHTML.trim()
+            : "NR",
+          millesime: millesime,
+        };
+
+        // Save bottle in DB
+        async function saveBottle(bottle) {
+          let bottleInDB = await Bottle.findOne({
+            saqCode: bottle.saqCode,
+          });
+          if (!bottleInDB) {
+            let newBottle = new Bottle(bottle);
+            bottlesToReturn.push(bottle);
+            bottlesInserted++;
+            await newBottle.save();
+          }
+          bottlesRejected++;
+        }
+        saveBottle(bottle);
+      });
+    }
+    res.send(bottlesToReturn);
+  })
 );
 
 module.exports = router;
