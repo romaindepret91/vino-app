@@ -45,13 +45,13 @@ function Bottles() {
   function handleImportSAQ() {
     importSAQ().then((response) => {
       console.log(response.data);
-      // const imported = response.data["resultatInsertion"]["inserees"];
-      // const rejected = response.data["resultatInsertion"]["rejetees"];
-      // options.setBottles(response.data["bouteilles"]);
-      // refresh();
-      // notify(
-      //   `Importation: ${imported} bouteille(s) insérée(s) et ${rejected} bouteille(s) rejetée(s)`
-      // );
+      const inserted = response.data["bottlesInserted"];
+      const rejected = response.data["bottlesRejected"];
+      options.setBottles(response.data["bottlesToReturn"]);
+      refresh();
+      notify(
+        `Importation: ${inserted} bouteille(s) insérée(s) et ${rejected} bouteille(s) rejetée(s)`
+      );
     });
   }
 

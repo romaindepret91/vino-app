@@ -10907,3 +10907,8 @@
   ],
   timestamp: '2022-11-28T22:23:54.074Z'
 }
+{
+  message: 'saqCodes.map is not a function',
+  level: 'error',
+  timestamp: '2022-11-29T14:48:27.308Z'
+}
