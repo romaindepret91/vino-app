@@ -4,6 +4,7 @@ const router = express.Router();
 const _ = require("lodash");
 const bcrypt = require("bcrypt");
 const nodemailer = require("nodemailer");
+const config = require("config");
 const {
   User,
   validateUser,
@@ -166,7 +167,7 @@ router.get(
       port: 465,
       auth: {
         user: "vinoteam20632@gmail.com",
-        pass: "mxwkkxbbpttdcjuk",
+        pass: config.get("gmailToken"),
       },
       secure: true,
     });
@@ -180,8 +181,7 @@ router.get(
       from: "vinoteam20632@gmail.com",
       to: user.email,
       subject: "Vino - Réinitalisation de mot de passe",
-      text: `Bonjour ${user.username},`,
-      html: `   <a href='http://localhost:3001/dashboard/passwordReset/${tempPassword}'>Cliquez ici pour réinitialiser votre mot de passe</a>`,
+      html: `<h1>Bonjour ${user.username}</h1>,  <a href='http://localhost:3001/dashboard/passwordReset/${tempPassword}'>Cliquez ici pour réinitialiser votre mot de passe</a>`,
     };
 
     transporter.sendMail(mailData, (err, info) => {

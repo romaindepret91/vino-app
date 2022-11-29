@@ -1,3 +1,4 @@
 {
-  "jwtPrivateKey": "vino_jwtPrivateKey"
+  "jwtPrivateKey": "vino_jwtPrivateKey",
+  "gmailToken": "vino_gmailToken"
 }
