@@ -14,7 +14,8 @@ export default function BottleSmallCard({
   saqImg,
   name,
   saqCode,
-  description,
+  country,
+  maker,
 }) {
   const url = saqImg;
   const urlNoParam = url.split("?")[0];
@@ -24,8 +25,9 @@ export default function BottleSmallCard({
       <div className="wrapper">
         <div className="info">
           <h3>{name}</h3>
-          <p>{saqCode}</p>
-          <p>{description}</p>
+          <p>
+            {maker} | {country}
+          </p>
         </div>
         <img className="img-rotate" srcSet={urlNoParam} alt="bouteille" />
       </div>

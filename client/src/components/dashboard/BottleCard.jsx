@@ -57,7 +57,9 @@ function BottleCard({ bottle }) {
         <div className="wrapper">
           <div className="info">
             <h3 className="nom">{bottleToDisplay.name}</h3>
-            <p className="pays">{bottleToDisplay.description}</p>
+            <p className="pays">
+              {bottleToDisplay.maker} | {bottleToDisplay.country}
+            </p>
           </div>
           <img className="img-rotate" srcSet={urlNoParam} alt="bouteille" />
         </div>
