@@ -387,7 +387,7 @@ function AddBottle() {
               variant="outlined"
               margin="dense"
               onChange={(e) => setLibelle(e.target.value)}
-              defaultValue={carouselBottle ? carouselBottle.nom_bouteille : ""}
+              defaultValue={carouselBottle ? carouselBottle.name : ""}
             >
               Recherche
             </TextField>

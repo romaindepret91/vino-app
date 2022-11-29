@@ -7,7 +7,6 @@ import Cellars from "./Cellars";
 import Bottle from "./Bottle";
 import AddCellar from "./AddCellar";
 import AddBottle from "./AddBottle";
-import UpdateBottle from "./UpdateBottle";
 import Profil from "./Profil";
 import PasswordResetForm from "./PasswordResetForm";
 import WelcomePage from "./WelcomePage";
@@ -90,8 +89,6 @@ function Dashboard({ currentCellarId, setCurrentCellarId }) {
                   </React.Fragment>
                 }
               />
-              {/* Component that displays the form for updating a bottle */}
-              <Route path="/updateBottle" element={<UpdateBottle />} />
               {/* Component that displays the profil information of the connected user */}
               <Route path="/profil" element={<Profil />} />
               {/* Component that displays the form for updating user password */}

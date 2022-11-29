@@ -107,14 +107,7 @@ function Bottle() {
   return (
     <div className="Bottle-card">
       <div className="actions">
-        <Button
-          disabled={false}
-          onClick={() =>
-            navigate("/dashboard/updateBottle", {
-              state: bottle,
-            })
-          }
-        >
+        <Button disabled={true}>
           <div className="wrapper update">
             <span>Modifier</span> <FontAwesomeIcon icon={faPen} />
           </div>

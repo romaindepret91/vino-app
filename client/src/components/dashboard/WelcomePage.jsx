@@ -255,7 +255,9 @@ function WelcomePage() {
                         }
                         alt="bouteille"
                       />
-                      <p>{bottle.description}</p>
+                      <p>
+                        {bottle.maker} | {bottle.country}
+                      </p>
                     </div>
                   </div>
                 </Card>
