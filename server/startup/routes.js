@@ -1,9 +1,9 @@
 // ----- MIDDLEWARE ROUTES -----
 const express = require("express");
 const users = require("../routes/users");
-const admin = require("../routes/admin");
 const cellars = require("../routes/cellars");
 const bottles = require("../routes/bottles");
+const admin = require("../routes/admin");
 const auth = require("../routes/auth");
 const handleErrors = require("../middleware/handleErrors");
 const cors = require("cors");
@@ -15,9 +15,9 @@ module.exports = function (app) {
   app.use(express.json());
   // Routes middlewares
   app.use("/api/users", users);
-  app.use("/api/admin", admin);
   app.use("/api/cellars", cellars);
   app.use("/api/bottles", bottles);
+  app.use("/api/admin", admin);
   app.use("/api/auth", auth);
   // Error handler middleware: called when error catcher catches an error
   app.use(handleErrors);

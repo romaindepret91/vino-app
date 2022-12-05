@@ -194,7 +194,7 @@ router.get(
   })
 );
 
-// ----- UPDATE USER INFO ------
+// ----- UPDATE USER PASSWORD ------
 router.put(
   "/:id/updatePassword",
   auth,
