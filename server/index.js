@@ -1,7 +1,9 @@
 const express = require("express");
 const app = express();
 const logger = require("./log/logger");
+const path = require("path");
 
+app.use(express.static(path.join(__dirname + "/public")));
 // Calling starting modules
 require("./startup/routes")(app);
 require("./startup/db")();

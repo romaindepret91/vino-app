@@ -11035,3 +11035,126 @@
   ],
   timestamp: '2022-12-05T21:20:08.295Z'
 }
+{
+  error: Error: FATAL ERROR: jwtPrivateKey is not defined
+      at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:6:11)
+      at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:10:28)
+      at Module._compile (node:internal/modules/cjs/loader:1101:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+      at node:internal/main/run_main_module:17:47,
+  level: 'error',
+  message: 'uncaughtException: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:6:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:10:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  stack: 'Error: FATAL ERROR: jwtPrivateKey is not defined\n' +
+    '    at module.exports (/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js:6:11)\n' +
+    '    at Object.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/server/index.js:10:28)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1101:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47',
+  exception: true,
+  date: 'Tue Dec 06 2022 10:52:51 GMT-0500 (heure normale de l’Est nord-américain)',
+  process: {
+    pid: 2773,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 106565632,
+      heapTotal: 73601024,
+      heapUsed: 52486504,
+      external: 30609827,
+      arrayBuffers: 19386073
+    }
+  },
+  os: {
+    loadavg: [ 2.8818359375, 3.06982421875, 3.00146484375 ],
+    uptime: 7527
+  },
+  trace: [
+    {
+      column: 11,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/startup/config.js',
+      function: 'module.exports',
+      line: 6,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 28,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1153,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 47,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 17,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-06T15:52:51.256Z'
+}
