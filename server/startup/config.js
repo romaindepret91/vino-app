@@ -1,4 +1,5 @@
 // ----- SERVER CONFIGURATION -----
+process.env["NODE_CONFIG_DIR"] = "../config";
 const config = require("config");
 
 module.exports = function () {
