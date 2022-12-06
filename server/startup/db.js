@@ -4,6 +4,6 @@ const logger = require("../log/logger");
 
 module.exports = function () {
   mongoose
-    .connect("mongodb://localhost/vino")
+    .connect(process.env.MONGODB_URI || "mongodb://localhost/vino")
     .then(() => logger.info("Connected to MongoDB database..."));
 };

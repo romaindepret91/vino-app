@@ -1,5 +1,5 @@
 import axios from "axios";
-const hostOriginURL = "http://localhost:3000";
+const hostOriginURL = window.location.host;
 
 /**
  * Retrieve all bottles in the catalogue from the db

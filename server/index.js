@@ -3,8 +3,11 @@ const app = express();
 const logger = require("./log/logger");
 const path = require("path");
 process.env.NODE_CONFIG_DIR = path.join(__dirname, "..", "server/config");
-
+process.env.MONGODB_URI =
+  "mongodb+srv://romaindepret91:MFRQJsCchaDJCh9d@cluster0.xijvfpu.mongodb.net/?retryWrites=true&w=majority";
 app.use(express.static(path.join(__dirname + "/public")));
+
+console.log(process.env);
 // Calling starting modules
 require("./startup/routes")(app);
 require("./startup/db")();

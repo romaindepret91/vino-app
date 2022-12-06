@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.2484550d.css",
-    "main.js": "/static/js/main.71616cea.js",
+    "main.js": "/static/js/main.3d0db4a3.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/gallerie-vins.jpg": "/static/media/gallerie-vins.22b9b2144e2d281264f5.jpg",
     "index.html": "/index.html",
     "main.2484550d.css.map": "/static/css/main.2484550d.css.map",
-    "main.71616cea.js.map": "/static/js/main.71616cea.js.map",
+    "main.3d0db4a3.js.map": "/static/js/main.3d0db4a3.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2484550d.css",
-    "static/js/main.71616cea.js"
+    "static/js/main.3d0db4a3.js"
   ]
 }
