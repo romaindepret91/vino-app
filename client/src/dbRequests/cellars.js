@@ -1,5 +1,5 @@
 import axios from "axios";
-const hostOriginURL = window.location.host;
+const hostOriginURL = window.location.origin;
 
 /**
  * Retrieve all cellars of a user from the db

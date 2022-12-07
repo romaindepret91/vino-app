@@ -1,6 +1,5 @@
 import axios from "axios";
-const hostOriginURL = window.location.host;
-console.log(hostOriginURL);
+const hostOriginURL = window.location.origin;
 
 /**
  * Log user

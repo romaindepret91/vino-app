@@ -7,7 +7,6 @@ process.env.MONGODB_URI =
   "mongodb+srv://romaindepret91:MFRQJsCchaDJCh9d@cluster0.xijvfpu.mongodb.net/?retryWrites=true&w=majority";
 app.use(express.static(path.join(__dirname + "/public")));
 
-console.log(process.env);
 // Calling starting modules
 require("./startup/routes")(app);
 require("./startup/db")();
