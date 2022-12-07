@@ -78,7 +78,7 @@ router.get(
     );
     // Number of loops required to go through every pages (24 bottles per page)
     // const pages = Math.ceil(totalBottles / 24);
-    const pages = 3;
+    const pages = 50;
     // Loop though wine pages
     for (let i = 1; i <= pages; i++) {
       let html = await axios.get(`https://www.saq.com/fr/produits/vin?p=${i}`);
@@ -89,6 +89,7 @@ router.get(
       const saqCodes = Array.from(
         dom.window.document.querySelectorAll(".saq-code")
       );
+
       // call to wine page for each wine
       await Promise.all(
         saqCodes.map(async (code) => {
@@ -106,7 +107,7 @@ router.get(
                 winePageDom.window.document
                   .querySelector(".page-title")
                   .innerHTML.trim()
-                  .slice(-1)
+                  .slice(-4)
               )
             )
           )
@@ -141,9 +142,13 @@ router.get(
             ),
             saqCode: saqCode,
             saqUrl: `https://www.saq.com/fr/${saqCode}`,
-            saqImg: winePageDom.window.document
-              .querySelector("#mtImageContainer")
-              .querySelector("img").src,
+            saqImg: winePageDom.window.document.querySelector(
+              "#mtImageContainer"
+            )
+              ? winePageDom.window.document
+                  .querySelector("#mtImageContainer")
+                  .querySelector("img").src
+              : "https://www.saq.com/media/wysiwyg/placeholder/category/06.png",
             format: winePageDom.window.document
               .querySelector("[data-th='Format']")
               .innerHTML.trim(),

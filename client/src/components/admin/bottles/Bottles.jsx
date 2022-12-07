@@ -44,7 +44,6 @@ function Bottles() {
    */
   function handleImportSAQ() {
     importSAQ().then((response) => {
-      console.log(response.data);
       const inserted = response.data["bottlesInserted"];
       const rejected = response.data["bottlesRejected"];
       options.setBottles(response.data["bottlesToReturn"]);

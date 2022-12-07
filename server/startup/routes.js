@@ -7,6 +7,7 @@ const admin = require("../routes/admin");
 const auth = require("../routes/auth");
 const handleErrors = require("../middleware/handleErrors");
 const cors = require("cors");
+const path = require("path");
 
 module.exports = function (app) {
   // Allow CORS requests
@@ -19,6 +20,10 @@ module.exports = function (app) {
   app.use("/api/bottles", bottles);
   app.use("/api/admin", admin);
   app.use("/api/auth", auth);
+  // Reroute all other GET requests to index
+  app.get("/*", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "/public/index.html"));
+  });
   // Error handler middleware: called when error catcher catches an error
   app.use(handleErrors);
 };
