@@ -7,7 +7,6 @@ const path = require("path");
 process.env.NODE_CONFIG_DIR = path.join(__dirname, "..", "server/config");
 
 app.use(express.static(path.join(__dirname + "/public")));
-console.log(process.env);
 // Calling starting modules
 require("./startup/routes")(app);
 require("./startup/db")();

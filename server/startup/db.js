@@ -5,7 +5,7 @@ const config = require("config");
 
 process.env.MONGODB_URI = `mongodb+srv://romaindepret91:${config.get(
   "mongoDBToken"
-)}@cluster0.xijvfpu.mongodb.net/?retryWrites=true&w=majority`;
+)}@cluster0.xijvfpu.mongodb.net/vino?retryWrites=true&w=majority`;
 
 module.exports = function () {
   mongoose
