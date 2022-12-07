@@ -1,4 +1,5 @@
 {
   "jwtPrivateKey": "",
-  "gmailToken": ""
+  "gmailToken": "",
+  "mongoDBToken": ""
 }

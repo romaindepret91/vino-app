@@ -1,4 +1,5 @@
 {
   "jwtPrivateKey": "vino_jwtPrivateKey",
-  "gmailToken": "vino_gmailToken"
+  "gmailToken": "vino_gmailToken",
+  "mongoDBToken": "vino_mongoDBToken"
 }
