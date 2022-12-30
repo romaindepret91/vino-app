@@ -3,7 +3,7 @@ const app = express();
 const logger = require("./log/logger");
 const path = require("path");
 
-// Environement variables
+// Environment variables
 process.env.NODE_CONFIG_DIR = path.join(__dirname, "..", "server/config");
 
 app.use(express.static(path.join(__dirname + "/public")));

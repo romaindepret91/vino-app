@@ -18,9 +18,15 @@ import "./Homepage.scss";
 function Homepage() {
   return (
     <div className="Homepage">
-      <div className="logo">
-        <img className="homepage-logo" src={logoJaune} alt="logo" />
-        <h1>vino.</h1>
+      <div className="Homepage__logo">
+        <img className="logo-img" src={logoJaune} alt="logo" />
+        <h1 className="logo-title">
+          <span>V</span>
+          <span>i</span>
+          <span>n</span>
+          <span>O</span>
+          <span>.</span>
+        </h1>
       </div>
       <Routes>
         <Route path="/login" element={<Login />}></Route>

@@ -107,8 +107,8 @@ function Signup() {
   }
 
   return (
-    <div className="Form">
-      <h2>INSCRIPTION</h2>
+    <div className="Homepage__content">
+      <h2>Inscription</h2>
       <form className="Form" onSubmit={handleSigningUp}>
         <TextField
           className="textField"

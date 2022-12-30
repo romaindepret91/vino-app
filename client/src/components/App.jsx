@@ -14,6 +14,8 @@ import AdminHome from "./admin/AdminHome";
 import Page404 from "./Page404";
 // DB Requests
 import { getCellars } from "../dbRequests/cellars";
+// Styles
+import "./App.scss";
 
 /**
  * App Component.

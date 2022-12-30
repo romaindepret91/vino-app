@@ -58,7 +58,7 @@ function Login() {
   }
 
   return (
-    <div className="Form">
+    <div className="Homepage__content">
       {loginErrorMsg && (
         <Alert
           severity="error"
@@ -98,7 +98,7 @@ function Login() {
           {signupSuccessMsg.success_message}
         </Alert>
       )}
-      <h2>CONNEXION</h2>
+      <h2>Connexion</h2>
       <form className="Form" onSubmit={handleLoggingIn}>
         <TextField
           className="textField"
