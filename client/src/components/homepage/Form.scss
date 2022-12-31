@@ -66,6 +66,17 @@
       color: #6a3352;
       letter-spacing: 0.2em;
       border-radius: 10px;
+
+      &-disabled {
+        margin: 20px;
+        width: 200px;
+        font-weight: bold;
+        background-color: #ffe599;
+        color: #6a3352;
+        letter-spacing: 0.2em;
+        border-radius: 10px;
+        opacity: 0.5;
+      }
     }
 
     a {

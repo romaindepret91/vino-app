@@ -11,6 +11,15 @@ export async function loggingIn(credentials) {
 }
 
 /**
+ * Create new user in the db
+ * @param {*} donnees New data values
+ * @returns {Promise} Promise object represents the created user informations.
+ */
+export async function signingUp(data) {
+  return await axios.post(`${hostOriginURL}/api/users`, data);
+}
+
+/**
  * Update user data in the db
  * @param {object} data New data values
  * @param {object} user User to be updated

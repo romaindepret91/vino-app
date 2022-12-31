@@ -1,10 +1,10 @@
 // Npm packages and utilities
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
 import { TextField, Button, Alert, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { getInputError } from "./formValidator/signupForm";
+import { signingUp } from "../../dbRequests/users";
 // Styles
 import "./Form.scss";
 
@@ -28,9 +28,6 @@ function Signup() {
   const [formErrors, setFormErrors] = useState({});
   const [formIsValid, setFormIsValid] = useState(false);
   const [signupErrorMsg, setSignupErrorMsg] = useState(null);
-
-  // Global variables
-  const hostOriginURL = "http://localhost:3000";
 
   /**
    * Update form data on change of input value
@@ -77,15 +74,6 @@ function Signup() {
       setFormIsValid(true);
     else setFormIsValid(false);
   }, [formErrors, formValues]);
-
-  /**
-   * Create new user in the db
-   * @param {*} donnees New data values
-   * @returns {Promise} Promise object represents the created user informations.
-   */
-  const signingUp = async (data) => {
-    return await axios.post(`${hostOriginURL}/api/users`, data);
-  };
 
   /**
    * Handle user creation on client side after created on server.
@@ -213,7 +201,7 @@ function Signup() {
           Confirmer Mot de passe
         </TextField>
         <Button
-          className="valider"
+          className={formIsValid ? "valider" : "valider-disabled"}
           variant="contained"
           type="submit"
           disabled={!formIsValid}
