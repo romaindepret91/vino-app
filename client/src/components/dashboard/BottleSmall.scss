@@ -5,6 +5,7 @@
   align-items: center;
   font-family: "Open Sans", sans-serif;
   border: none;
+  max-width: 500px;
 
   .actions {
     display: flex;
@@ -56,13 +57,13 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: 1fr 30vw 1fr;
+      grid-template-columns: 1fr 100px 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       justify-items: center;
       justify-content: center;
       align-items: start;
-      max-height: 60vh;
       padding-top: 2vh;
+      min-height: 300px;
     }
 
     .bouteille-img {
@@ -74,14 +75,17 @@
 
       .background {
         position: absolute;
-        top: 0;
-        right: 0;
-        width: 170px;
+        top: -15px;
+        right: -100px;
+        width: 220px;
       }
     }
 
     img {
-      max-height: 25vh;
+      position: absolute;
+      left: -80px;
+      top: 20px;
+      max-height: 250px;
       z-index: 10;
     }
 

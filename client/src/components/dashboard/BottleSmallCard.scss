@@ -1,9 +1,13 @@
 .BottleSmallCard-card {
   position: relative;
   font-family: "Open Sans", sans-serif;
-  height: 100px;
+  height: 125px;
   text-align: start;
   width: 100%;
+
+  @media only screen and (min-width: 650px) {
+    width: 600px;
+  }
 
   .addBottle {
     display: flex;

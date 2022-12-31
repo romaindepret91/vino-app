@@ -6,6 +6,10 @@
   width: 100%;
   max-width: 650px;
   margin-top: 2vh;
+
+  & > h2 {
+    font-size: 1.2em;
+  }
 }
 
 .Cellars-content {

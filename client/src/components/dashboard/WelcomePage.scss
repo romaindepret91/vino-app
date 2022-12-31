@@ -5,6 +5,7 @@
   width: 100%;
   margin: 2vh;
   max-width: 650px;
+  position: absolute;
 }
 
 .Title-welcomePage {
@@ -16,7 +17,7 @@
 
 .WelcomePage-title {
   max-width: 80%;
-  font-size: 1.7em;
+  font-size: 1.3em;
   text-align: center;
   color: #6a3352;
 }
@@ -26,6 +27,11 @@
   justify-content: center;
   padding: 1vh;
   text-align: center;
+
+  & > p {
+    font-size: 0.9em;
+    padding: 3px 10px;
+  }
 }
 
 .backgroundMain {
@@ -80,8 +86,8 @@ circle {
 
 .WelcomePage-catalogue {
   width: 100%;
-  max-width: 650px;
-  margin-top: 2vh;
+  max-width: 400px;
+  margin-top: 1vh;
 
   & > div {
     justify-content: space-evenly !important;
@@ -111,6 +117,10 @@ circle {
       height: 80%;
       max-width: 100%;
 
+      .nomBout {
+        font-size: 0.9em;
+      }
+
       .info {
         display: flex;
         flex-direction: column;
@@ -123,9 +133,14 @@ circle {
 
       .carte-img {
         z-index: 10;
+
         & > img {
           height: 15vh;
           z-index: 10;
+        }
+
+        & > p {
+          font-size: 0.8em;
         }
       }
     }
@@ -146,7 +161,7 @@ circle {
   padding: 10px;
 
   h4 {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     color: #6a3352;
     z-index: 10;
