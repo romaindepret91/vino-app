@@ -11572,3 +11572,150 @@
   level: 'error',
   timestamp: '2022-12-31T19:47:22.382Z'
 }
+{
+  error: MongoInvalidArgumentError: Password cannot be empty
+      at passwordDigest (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/auth/scram.js:190:15)
+      at continueScramConversation (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/auth/scram.js:112:33)
+      at /Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/auth/scram.js:90:9
+      at Connection.onMessage (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/connection.js:242:9)
+      at MessageStream.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/connection.js:61:60)
+      at MessageStream.emit (node:events:390:28)
+      at processIncomingData (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/message_stream.js:125:16)
+      at MessageStream._write (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+      at writeOrBuffer (node:internal/streams/writable:389:12)
+      at _write (node:internal/streams/writable:330:10) {
+    [Symbol(errorLabels)]: Set(2) { 'HandshakeError', 'ResetPool' }
+  },
+  level: 'error',
+  message: 'unhandledRejection: Password cannot be empty\n' +
+    'MongoInvalidArgumentError: Password cannot be empty\n' +
+    '    at passwordDigest (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/auth/scram.js:190:15)\n' +
+    '    at continueScramConversation (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/auth/scram.js:112:33)\n' +
+    '    at /Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/auth/scram.js:90:9\n' +
+    '    at Connection.onMessage (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/connection.js:242:9)\n' +
+    '    at MessageStream.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/connection.js:61:60)\n' +
+    '    at MessageStream.emit (node:events:390:28)\n' +
+    '    at processIncomingData (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/message_stream.js:125:16)\n' +
+    '    at MessageStream._write (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/message_stream.js:33:9)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)',
+  stack: 'MongoInvalidArgumentError: Password cannot be empty\n' +
+    '    at passwordDigest (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/auth/scram.js:190:15)\n' +
+    '    at continueScramConversation (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/auth/scram.js:112:33)\n' +
+    '    at /Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/auth/scram.js:90:9\n' +
+    '    at Connection.onMessage (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/connection.js:242:9)\n' +
+    '    at MessageStream.<anonymous> (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/connection.js:61:60)\n' +
+    '    at MessageStream.emit (node:events:390:28)\n' +
+    '    at processIncomingData (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/message_stream.js:125:16)\n' +
+    '    at MessageStream._write (/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/message_stream.js:33:9)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)',
+  exception: true,
+  date: 'Sat Dec 31 2022 16:22:03 GMT-0500 (heure normale de l’Est)',
+  process: {
+    pid: 6359,
+    uid: 501,
+    gid: 20,
+    cwd: '/Applications/MAMP/htdocs/projet-stage/vino/server',
+    execPath: '/usr/local/bin/node',
+    version: 'v16.13.1',
+    argv: [
+      '/usr/local/bin/node',
+      '/Applications/MAMP/htdocs/projet-stage/vino/server/index.js'
+    ],
+    memoryUsage: {
+      rss: 108929024,
+      heapTotal: 70512640,
+      heapUsed: 48540752,
+      external: 28153266,
+      arrayBuffers: 19310381
+    }
+  },
+  os: {
+    loadavg: [ 2.435546875, 2.39111328125, 2.57958984375 ],
+    uptime: 23829
+  },
+  trace: [
+    {
+      column: 15,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/auth/scram.js',
+      function: 'passwordDigest',
+      line: 190,
+      method: null,
+      native: false
+    },
+    {
+      column: 33,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/auth/scram.js',
+      function: 'continueScramConversation',
+      line: 112,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/auth/scram.js',
+      function: null,
+      line: 90,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/connection.js',
+      function: 'Connection.onMessage',
+      line: 242,
+      method: 'onMessage',
+      native: false
+    },
+    {
+      column: 60,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/connection.js',
+      function: null,
+      line: 61,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'MessageStream.emit',
+      line: 390,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 16,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/message_stream.js',
+      function: 'processIncomingData',
+      line: 125,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: '/Applications/MAMP/htdocs/projet-stage/vino/node_modules/mongodb/lib/cmap/message_stream.js',
+      function: 'MessageStream._write',
+      line: 33,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/writable',
+      function: 'writeOrBuffer',
+      line: 389,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: '_write',
+      line: 330,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-31T21:22:03.604Z'
+}

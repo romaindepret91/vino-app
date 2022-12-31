@@ -79,7 +79,7 @@ function Cellar() {
         </Alert>
       )}
       {/* List of bottles in the cellar or relevant message if none */}
-      {bottlesInCellar.length === 0 && (
+      {(bottlesInCellar.length === 0 || !bottlesInCellar) && (
         <p className="noBouteille">Aucune bouteille dans ce cellier</p>
       )}
       {bottlesInCellar.map((bottle) => (
