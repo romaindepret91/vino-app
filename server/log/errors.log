@@ -11562,3 +11562,13 @@
   ],
   timestamp: '2022-12-30T14:49:13.085Z'
 }
+{
+  message: 'window is not defined',
+  level: 'error',
+  timestamp: '2022-12-31T19:45:28.091Z'
+}
+{
+  message: 'location is not defined',
+  level: 'error',
+  timestamp: '2022-12-31T19:47:22.382Z'
+}

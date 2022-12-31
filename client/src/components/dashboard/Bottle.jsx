@@ -93,8 +93,10 @@ function Bottle() {
       (res) => {
         setCellar(res.data);
         navigate(`/dashboard/cellars/${cellar._id}`, {
-          state: { cellar: res.data },
-          success_message: "Bouteille supprimée avec succès",
+          state: {
+            cellar: res.data,
+            success_message: "Bouteille supprimée avec succès",
+          },
         });
       }
     );

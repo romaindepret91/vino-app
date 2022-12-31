@@ -136,6 +136,12 @@ function Profil() {
     });
   }
 
+  useEffect(() => {
+    setTimeout(() => {
+      setUpdateSuccessMsg(null);
+    }, 3000);
+  }, [user]);
+
   return (
     <React.Fragment>
       <h2 className="Profil-title">MON PROFIL</h2>

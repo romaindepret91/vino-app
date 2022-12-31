@@ -23,7 +23,6 @@ function Cellar() {
     cellar.success_message || null
   );
   const [bottlesInCellar, setBottlesInCellar] = useState(cellar.cellar.bottles);
-
   /**
    * Handle persistence of data in case of hard reload.
    * Clean confirmation message.
@@ -37,11 +36,7 @@ function Cellar() {
       });
     setTimeout(() => {
       setRetroactionMsg(null);
-    }, 2500);
-
-    return () => {
-      setRetroactionMsg(null);
-    };
+    }, 3000);
   }, []);
 
   return (

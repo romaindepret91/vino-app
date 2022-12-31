@@ -176,12 +176,12 @@ router.get(
     await User.findByIdAndUpdate(id, {
       tempPassword: tempPassword,
     });
-
+    const originURl = `${req.protocol}://${req.get("host")}`;
     const mailData = {
       from: "vinoteam20632@gmail.com",
       to: user.email,
       subject: "Vino - Réinitalisation de mot de passe",
-      html: `<h1>Bonjour ${user.username}</h1>,  <a href='http://localhost:3001/dashboard/passwordReset/${tempPassword}'>Cliquez ici pour réinitialiser votre mot de passe</a>`,
+      html: `<h1>Bonjour ${user.username}</h1>,  <a href='${originURl}/dashboard/passwordReset/${tempPassword}'>Cliquez ici pour réinitialiser votre mot de passe</a>`,
     };
 
     transporter.sendMail(mailData, (err, info) => {

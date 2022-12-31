@@ -47,7 +47,9 @@ function AddBottle() {
   const [insertedBottle, setInsertedBottle] = useState(null);
   const [libelle, setLibelle] = useState("");
   const [quantity, setQuantity] = useState(1);
-  const [cellar, setCellar] = useState(null);
+  const [cellar, setCellar] = useState(
+    JSON.parse(window.localStorage.getItem("cellar")) || null
+  );
   const [openNoCellarDialog, setOpenNoCellarDialog] = useState(false);
   const [openConfirmDialog, setOpenConfirmDialog] = useState(false);
   const [openSelectCellarDialog, setOpenSelectCellarDialog] = useState(false);
@@ -365,10 +367,10 @@ function AddBottle() {
           >
             Sélectionner un cellier
           </MenuItem>
-          {cellars.map((cellar) => {
+          {cellars.map((c) => {
             return (
-              <MenuItem className="selectItem" key={cellar._id} value={cellar}>
-                {cellar.name}
+              <MenuItem className="selectItem" key={c._id} value={c}>
+                {c.name}
               </MenuItem>
             );
           })}

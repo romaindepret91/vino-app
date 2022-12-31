@@ -86,35 +86,12 @@ function Cellars({ setCurrentCellarId, currentCellarId }) {
       });
     setTimeout(() => {
       setRetroactionMsg(null);
-    }, 2500);
-
-    return () => {
-      setRetroactionMsg(null);
-    };
+    }, 3000);
   }, []);
 
   return (
     <div className="Cellars">
       <h2>MES CELLIERS</h2>
-      {retroactionMsg && (
-        <Alert
-          severity="success"
-          action={
-            <IconButton
-              aria-label="close"
-              color="inherit"
-              size="small"
-              onClick={() => {
-                setRetroactionMsg(null);
-              }}
-            >
-              <CloseIcon fontSize="inherit" />
-            </IconButton>
-          }
-        >
-          {retroactionMsg.success_message}
-        </Alert>
-      )}
       {/* Dialog box for deletion confirmation */}
       <Dialog open={openSuppDialog}>
         <DialogContent>
@@ -159,6 +136,25 @@ function Cellars({ setCurrentCellarId, currentCellarId }) {
             </Card>
           </Button>
         </React.Fragment>
+        {retroactionMsg && (
+          <Alert
+            severity="success"
+            action={
+              <IconButton
+                aria-label="close"
+                color="inherit"
+                size="small"
+                onClick={() => {
+                  setRetroactionMsg(null);
+                }}
+              >
+                <CloseIcon fontSize="inherit" />
+              </IconButton>
+            }
+          >
+            {retroactionMsg.success_message}
+          </Alert>
+        )}
         <List component="nav">
           {cellars.map((cellar) => {
             return (

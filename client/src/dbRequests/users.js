@@ -1,5 +1,5 @@
 import axios from "axios";
-const hostOriginURL = "http://localhost:3000" || window.location.origin;
+const hostOriginURL = window.location.origin;
 
 /**
  * Log user
