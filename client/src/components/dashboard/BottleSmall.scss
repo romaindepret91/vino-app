@@ -34,12 +34,6 @@
       font-size: 0.8em;
     }
 
-    .background {
-      position: absolute;
-      top: 10vh;
-      max-height: 30vh;
-    }
-
     .blanc {
       circle {
         fill: #ffe599;
@@ -67,7 +61,6 @@
       justify-items: center;
       justify-content: center;
       align-items: start;
-      min-width: 80vw;
       max-height: 60vh;
       padding-top: 2vh;
     }
@@ -77,6 +70,14 @@
       grid-row: 1 / 4;
       display: flex;
       max-height: 40vh;
+      position: relative;
+
+      .background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 170px;
+      }
     }
 
     img {

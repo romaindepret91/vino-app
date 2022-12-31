@@ -13,7 +13,7 @@ import "./AddForm.scss";
 
 /**
  * AddCellar Component.
- * Renders a div of class FormAjout containing the form to add a new cellar.
+ * Renders a div of class AddForm containing the form to add a new cellar.
  *
  * @returns {div} The AddCellar
  */
@@ -48,9 +48,9 @@ function AddCellar() {
   };
 
   return (
-    <div className="FormAjout">
+    <div className="AddForm">
       <h2>NOUVEAU CELLIER</h2>
-      <form className="FormAjout" onSubmit={handleAddCellar}>
+      <form className="AddForm" onSubmit={handleAddCellar}>
         <Grid>
           <Grid item xs={12}>
             <TextField

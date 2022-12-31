@@ -116,7 +116,7 @@ function Signup() {
           type="email"
           id="email"
           name="email"
-          variant="outlined"
+          variant="standard"
           label="Courriel"
           margin="dense"
           value={formValues.email}
@@ -133,7 +133,7 @@ function Signup() {
           type="text"
           id="username"
           name="username"
-          variant="outlined"
+          variant="standard"
           label="Nom Utilisateur"
           margin="dense"
           value={formValues.username}
@@ -150,7 +150,7 @@ function Signup() {
           type="text"
           id="firstname"
           name="firstname"
-          variant="outlined"
+          variant="standard"
           label="Prénom"
           margin="dense"
           value={formValues.firstname}
@@ -167,7 +167,7 @@ function Signup() {
           type="text"
           id="surname"
           name="surname"
-          variant="outlined"
+          variant="standard"
           label="Nom"
           margin="dense"
           value={formValues.surname}
@@ -184,7 +184,7 @@ function Signup() {
           type="password"
           id="password"
           name="password"
-          variant="outlined"
+          variant="standard"
           label="Mot de passe"
           margin="dense"
           value={formValues.password}
@@ -201,7 +201,7 @@ function Signup() {
           type="password"
           id="password_confirmed"
           name="password_confirmed"
-          variant="outlined"
+          variant="standard"
           label="Confirmer Mot de passe"
           margin="dense"
           value={formValues.password_confirmed}

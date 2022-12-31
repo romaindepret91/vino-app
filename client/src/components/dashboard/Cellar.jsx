@@ -47,6 +47,22 @@ function Cellar() {
   return (
     <div className="cellar-content">
       <h2>{cellar.cellar.name}</h2>
+      {/* Button to add a bottle in the cellar */}
+      <Button
+        className="BottleCard-btn"
+        onClick={() => navigate(`/dashboard/addBottle`)}
+      >
+        <Card className="BottleCard-btn-card">
+          <div className="addBottle">
+            <div>
+              <h2>Ajouter une Bouteille</h2>
+            </div>
+            <div>
+              <AddCircleRoundedIcon />
+            </div>
+          </div>
+        </Card>
+      </Button>
       {/* Success deletion message */}
       {retroactionMsg && (
         <Alert
@@ -87,19 +103,6 @@ function Cellar() {
           <BottleCard bottle={bottle} />
         </Button>
       ))}
-      {/* Button to add a bottle in the cellar */}
-      <Button onClick={() => navigate(`/dashboard/addBottle`)}>
-        <Card className="BottleCard-card">
-          <div className="addBottle">
-            <div>
-              <h2>Ajouter une Bouteille</h2>
-            </div>
-            <div>
-              <AddCircleRoundedIcon />
-            </div>
-          </div>
-        </Card>
-      </Button>
     </div>
   );
 }

@@ -42,7 +42,7 @@
   .img-rotate {
     flex: 1;
     width: 100%;
-    max-width: 20vw;
+    max-width: 90px;
     margin-right: 30px;
     transform: rotate(90deg);
   }
@@ -62,6 +62,10 @@
 
   .wrapper {
     display: flex;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .info {

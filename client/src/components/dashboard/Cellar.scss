@@ -3,10 +3,61 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  max-width: 650px;
   color: #6a3352;
 
   & > h2 {
     margin: 2vh 0;
+  }
+
+  .BottleCard-btn {
+    max-width: 300px;
+
+    .BottleCard-btn-card {
+      position: relative;
+      font-family: "Open Sans", sans-serif;
+      text-align: start;
+      width: 100%;
+      height: 100%;
+
+      .addBottle {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        background-color: #6a3352;
+        color: white;
+        opacity: 40%;
+        font-size: 0.8em;
+
+        h2 {
+          padding: 25px 10px;
+        }
+
+        & > div:nth-child(1) {
+          width: 75%;
+          text-align: center;
+        }
+
+        & > div:nth-child(2) {
+          width: 25%;
+        }
+
+        svg {
+          position: relative;
+          font-size: 4em;
+          opacity: 100%;
+        }
+      }
+    }
+
+    svg {
+      position: relative;
+      font-size: 4em;
+      opacity: 100%;
+      color: white;
+    }
   }
 
   .MuiButton-root {

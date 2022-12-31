@@ -43,7 +43,7 @@ function WelcomePage() {
             </p>
           </div>
           <Button onClick={() => navigate(`/dashboard/addCellar`)}>
-            <Card className="Carte-cellier">
+            <Card className="WelcomePage-Cellar-card">
               <div className="addCellar">
                 <div>
                   <h2>Ajouter un cellier</h2>
@@ -64,7 +64,7 @@ function WelcomePage() {
             </p>
           </div>
           <Button onClick={() => navigate(`/dashboard/cellars`)}>
-            <Card className="Carte-cellier">
+            <Card className="WelcomePage-Cellar-card">
               <div className="addCellar">
                 <div>
                   <h2>Accéder à mes celliers</h2>
@@ -117,8 +117,8 @@ function WelcomePage() {
           }}
           responsiveProps={[
             {
-              itemsToShow: 2,
-              itemsToScroll: 2,
+              itemsToShow: 1,
+              itemsToScroll: 1,
               minWidth: 768,
             },
           ]}

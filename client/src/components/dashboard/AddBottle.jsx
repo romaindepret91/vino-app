@@ -32,7 +32,7 @@ import "./AddForm.scss";
 
 /**
  * AddBottle Component.
- * Renders a div of class FormAjout
+ * Renders a div of class AddForm
  *
  * @returns {div} The AddBottle
  */
@@ -196,7 +196,7 @@ function AddBottle() {
   }, [libelle]);
   window.scrollTo(0, 0);
   return (
-    <div className="FormAjout">
+    <div className="AddForm">
       <Dialog
         className="NoCellar-dialog"
         open={openNoCellarDialog}
@@ -347,7 +347,7 @@ function AddBottle() {
 
       <h2>AJOUT DE BOUTEILLES</h2>
 
-      <FormControl className="FormAjout">
+      <FormControl className="AddForm">
         <Select
           className="selectBar"
           defaultValue={"default"}
@@ -375,7 +375,7 @@ function AddBottle() {
         </Select>
       </FormControl>
 
-      <form className="FormAjout" action="submit" onSubmit={handleSubmit}>
+      <form className="AddForm" action="submit" onSubmit={handleSubmit}>
         <Grid>
           <Grid item xs={12}>
             <TextField

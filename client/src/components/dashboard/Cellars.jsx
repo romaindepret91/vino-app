@@ -95,7 +95,7 @@ function Cellars({ setCurrentCellarId, currentCellarId }) {
 
   return (
     <div className="Cellars">
-      <h2>MA LISTE DE CELLIERS</h2>
+      <h2>MES CELLIERS</h2>
       {retroactionMsg && (
         <Alert
           severity="success"
@@ -145,6 +145,20 @@ function Cellars({ setCurrentCellarId, currentCellarId }) {
         <p className="noBouteille">Aucun cellier à afficher</p>
       )}
       <Box className="Cellars-content">
+        <React.Fragment>
+          <Button onClick={() => navigate(`/dashboard/addCellar`)}>
+            <Card className="Cellar-card">
+              <div className="addCellar">
+                <div>
+                  <h2>Ajouter un cellier</h2>
+                </div>
+                <div>
+                  <AddCircleRoundedIcon />
+                </div>
+              </div>
+            </Card>
+          </Button>
+        </React.Fragment>
         <List component="nav">
           {cellars.map((cellar) => {
             return (
@@ -176,20 +190,6 @@ function Cellars({ setCurrentCellarId, currentCellarId }) {
             );
           })}
         </List>
-        <React.Fragment>
-          <Button onClick={() => navigate(`/dashboard/addCellar`)}>
-            <Card className="Carte-cellier">
-              <div className="addCellar">
-                <div>
-                  <h2>Ajouter un cellier</h2>
-                </div>
-                <div>
-                  <AddCircleRoundedIcon />
-                </div>
-              </div>
-            </Card>
-          </Button>
-        </React.Fragment>
       </Box>
     </div>
   );

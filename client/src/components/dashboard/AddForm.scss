@@ -1,4 +1,4 @@
-.FormAjout {
+.AddForm {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,7 @@
   }
 
   .selectBar {
-    margin-top: 3vh !important;
+    margin-top: 2vh !important;
     padding: 10px 20px;
     width: 55vw;
     div {
@@ -40,6 +40,13 @@
 
   .MuiGrid-root {
     margin-bottom: 1vh;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    .MuiFormControl-root {
+      width: 100%;
+    }
   }
 
   fieldset,
@@ -83,11 +90,22 @@
 }
 
 .confirmation-dialog {
+  .MuiPaper-root {
+    margin: 8px;
+  }
   .MuiDialogTitle-root {
     padding: 20px 24px !important;
+  }
+
+  .MuiDialogContent-root {
+    padding: 20px 15px;
   }
 
   .quantity {
     margin-top: 5px;
   }
+
+  // .Carte-une-bouteille .card img {
+  //   max-height: 31vh;
+  // }
 }

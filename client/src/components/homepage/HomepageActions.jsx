@@ -12,18 +12,18 @@ import "./HomepageActions.scss";
  * @returns {div} The HomepageActions
  */
 function HomepageActions() {
-    return (
-        <div className="accueil">
-            <Fab variant="extended" className="login">
-                {" "}
-                <Link to="/login">Connexion</Link>
-            </Fab>
-            <Fab variant="extended" className="signup">
-                {" "}
-                <Link to="/signup">Inscription</Link>
-            </Fab>
-        </div>
-    );
+  return (
+    <div className="Homepage-actions">
+      <Fab variant="extended" className="login">
+        {" "}
+        <Link to="/login">Connexion</Link>
+      </Fab>
+      <Fab variant="extended" className="signup">
+        {" "}
+        <Link to="/signup">Inscription</Link>
+      </Fab>
+    </div>
+  );
 }
 
 export default HomepageActions;

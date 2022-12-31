@@ -1,26 +1,47 @@
-.accueil {
-    display: flex;
-    flex-direction: column;
+.Homepage-actions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 
-    .login,
-    .signup {
-        margin: 10px;
-        width: 225px;
-        font-weight: bold;
-    }
+  .login,
+  .signup {
+    margin: 10px;
+    width: 225px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
 
-    .login {
-        background-color: #ffe599;
-        color: #6a3352;
-    }
+  .login {
+    background-color: #ffe599;
+    color: #6a3352;
 
-    .signup {
-        border: 2px solid #ffe599;
-        color: #ffe599;
-        background-color: transparent;
+    &:hover {
+      background-color: #ffe599;
+      opacity: 0.8;
     }
 
     a {
-        letter-spacing: 0.2em;
+      color: #6a3352;
     }
+  }
+
+  .signup {
+    border: 2px solid #ffe599;
+    color: #ffe599;
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+      opacity: 0.8;
+    }
+
+    a {
+      color: #ffe599;
+    }
+  }
+
+  a {
+    letter-spacing: 0.2em;
+    text-decoration: none;
+  }
 }

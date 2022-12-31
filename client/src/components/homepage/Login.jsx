@@ -107,7 +107,7 @@ function Login() {
           name="email"
           id="email"
           label="Courriel"
-          variant="outlined"
+          variant="standard"
           margin="dense"
           value={formValues.email}
           onChange={handleInputChange}
@@ -121,7 +121,7 @@ function Login() {
           id="password"
           name="password"
           label="Mot de passe"
-          variant="outlined"
+          variant="standard"
           margin="dense"
           value={formValues.password}
           onChange={handleInputChange}

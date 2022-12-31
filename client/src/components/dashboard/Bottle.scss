@@ -5,6 +5,8 @@
   align-items: center;
   font-family: "Open Sans", sans-serif;
   border: none;
+  width: 100%;
+  position: absolute;
 
   .actions {
     display: flex;
@@ -27,7 +29,7 @@
     flex-direction: column;
     flex-grow: 1;
     align-items: center;
-    padding-top: 4vh;
+    padding-top: 2vh;
 
     p {
       text-align: center;
@@ -35,7 +37,7 @@
 
     .background {
       position: absolute;
-      top: 27vh;
+      top: 100px;
       max-height: 40vh;
     }
 
@@ -61,12 +63,12 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: 1fr 30vw 1fr;
+      grid-template-columns: 1fr 100px 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       justify-items: center;
       justify-content: center;
       align-items: start;
-      min-width: 90vw;
+      max-width: 400px;
       max-height: 40vh;
       padding-top: 2vh;
     }
@@ -79,7 +81,7 @@
     }
 
     img {
-      max-height: 35vh;
+      max-height: 37vh;
       z-index: 10;
     }
 
@@ -139,7 +141,6 @@
     .quantity {
       grid-column: 2 / 3;
       grid-row: 4;
-      margin: 1vh 0;
     }
 
     h3 {
@@ -186,7 +187,7 @@
     }
 
     .MuiButtonGroup-grouped {
-      min-width: 25vw !important;
+      width: 100px;
     }
 
     .MuiButtonGroup-grouped:not(:last-of-type) {

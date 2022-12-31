@@ -1,9 +1,10 @@
 .WelcomePage-content {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   flex-direction: column;
   width: 100%;
   margin: 2vh;
+  max-width: 650px;
 }
 
 .Title-welcomePage {
@@ -13,12 +14,9 @@
   text-transform: uppercase;
 }
 
-.pWelcomePage {
-  max-width: 75%;
-}
-
 .WelcomePage-title {
   max-width: 80%;
+  font-size: 1.7em;
   text-align: center;
   color: #6a3352;
 }
@@ -48,32 +46,32 @@ circle {
   opacity: 20%;
 }
 
-.Carte-cellier {
+.WelcomePage-Cellar-card {
   position: relative;
   font-family: "Open Sans", sans-serif;
-  height: 90px;
   text-align: start;
   width: 100%;
 
   .addCellar {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     width: 100%;
     height: 100%;
     background-color: #6a3352;
     font-size: 0.8em;
-    opacity: 30%;
+    padding: 10px 10px;
+    opacity: 40%;
 
     h2 {
       font-weight: bold;
       opacity: 100%;
       color: white;
+      text-transform: none;
     }
 
     svg {
       position: relative;
-      font-size: 6em;
+      font-size: 4em;
       opacity: 100%;
       color: white;
     }
@@ -82,6 +80,7 @@ circle {
 
 .WelcomePage-catalogue {
   width: 100%;
+  max-width: 650px;
   margin-top: 2vh;
 
   & > div {

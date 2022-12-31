@@ -2,6 +2,8 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
+import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Images
 import logoJaune from "../../assets/img/logoJaune.png";
 // Contexts
@@ -20,12 +22,23 @@ function Header() {
   const [user] = useContext(UserContext);
   return (
     <div className="App-header">
-      <div className="App-header-logo">
-        <Button onClick={() => navigate(`/dashboard`, {})}>
-          <img src={logoJaune} alt="logo" />
-        </Button>
-        <p>Bonjour {user.user.username}</p>
-      </div>
+      <Button
+        className="App-header-logo"
+        onClick={() => navigate(`/dashboard`, {})}
+      >
+        <img className="logo-img" src={logoJaune} alt="logo" />
+        <h1 className="logo-title">
+          <span>V</span>
+          <span>i</span>
+          <span>n</span>
+          <span>O</span>
+          <span>.</span>
+        </h1>
+      </Button>
+      <p className="App-header-welcome">
+        <FontAwesomeIcon className="navIcon" icon={faUserCircle} />
+        {user.user.username}
+      </p>
     </div>
   );
 }
