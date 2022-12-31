@@ -90,7 +90,7 @@ function Signup() {
         });
       })
       .catch((error) => {
-        if (error.response.status === 405) setSignupErrorMsg(error.response);
+        setSignupErrorMsg(error.response);
       });
   }
 
