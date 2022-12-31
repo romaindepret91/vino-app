@@ -128,8 +128,8 @@ function WelcomePage() {
           <div
             className="Carousel-main"
             style={{
-              width: 260,
-              height: 260,
+              width: 270,
+              height: 270,
             }}
           >
             <div className="Carte-bouteille-welcomePage">
@@ -166,8 +166,8 @@ function WelcomePage() {
           {bottlesToDisplay.map((bottle) => (
             <div
               style={{
-                width: 260,
-                height: 260,
+                width: 270,
+                height: 270,
               }}
               key={bottle._id}
             >
