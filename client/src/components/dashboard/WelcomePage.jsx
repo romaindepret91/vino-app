@@ -129,7 +129,7 @@ function WelcomePage() {
             className="Carousel-main"
             style={{
               width: 260,
-              height: 230,
+              height: 260,
             }}
           >
             <div className="Carte-bouteille-welcomePage">
@@ -167,7 +167,7 @@ function WelcomePage() {
             <div
               style={{
                 width: 260,
-                height: 230,
+                height: 260,
               }}
               key={bottle._id}
             >

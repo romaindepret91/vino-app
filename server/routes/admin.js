@@ -78,7 +78,7 @@ router.get(
     );
     // Number of loops required to go through every pages (24 bottles per page)
     // const pages = Math.ceil(totalBottles / 24);
-    const pages = 50;
+    const pages = 20;
     // Loop though wine pages
     for (let i = 1; i <= pages; i++) {
       let html = await axios.get(`https://www.saq.com/fr/produits/vin?p=${i}`);
