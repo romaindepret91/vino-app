@@ -1,5 +1,5 @@
 import axios from "axios";
-const hostOriginURL = "http://localhost:3000";
+const hostOriginURL = window.location.origin;
 
 const loggingIn = async (credentials) => {
   return await axios.post(`${hostOriginURL}/api/auth/admin`, credentials);

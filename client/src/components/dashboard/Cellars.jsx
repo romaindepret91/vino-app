@@ -97,7 +97,8 @@ function Cellars({ setCurrentCellarId, currentCellarId }) {
         <DialogContent>
           <DialogTitle id="attention">ATTENTION</DialogTitle>
           <DialogContentText id="alert-dialog-description">
-            Voulez vous supprimer ce cellier?
+            Voulez-vous supprimer ce cellier et toutes les bouteilles qu'il
+            contient?
           </DialogContentText>
         </DialogContent>
         <DialogActions>
@@ -118,9 +119,6 @@ function Cellars({ setCurrentCellarId, currentCellarId }) {
           </Button>
         </DialogActions>
       </Dialog>
-      {cellars.length === 0 && (
-        <p className="noBouteille">Aucun cellier à afficher</p>
-      )}
       <Box className="Cellars-content">
         <React.Fragment>
           <Button onClick={() => navigate(`/dashboard/addCellar`)}>
@@ -187,6 +185,9 @@ function Cellars({ setCurrentCellarId, currentCellarId }) {
           })}
         </List>
       </Box>
+      {cellars.length === 0 && (
+        <p className="noBouteille">Aucun cellier à afficher</p>
+      )}
     </div>
   );
 }

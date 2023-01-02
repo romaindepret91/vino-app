@@ -175,7 +175,10 @@ function AddBottle() {
    * Set the list of bottles to the bottle selected from the carousel in the welcome page
    */
   useEffect(() => {
-    if (carouselBottle) setClonedBottles(carouselBottle);
+    if (carouselBottle) {
+      setLibelle(carouselBottle.name);
+      window.history.replaceState({}, document.title);
+    }
   }, []);
 
   /**
@@ -193,10 +196,10 @@ function AddBottle() {
           bottle.name.toUpperCase().includes(libelle.toUpperCase()) ||
           bottle.description.toUpperCase().includes(libelle.toUpperCase())
       );
-
     setClonedBottles(res);
   }, [libelle]);
   window.scrollTo(0, 0);
+
   return (
     <div className="AddForm">
       <Dialog
@@ -239,7 +242,7 @@ function AddBottle() {
         <DialogTitle>Quantité souhaitée</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            Quantité de cette bouteille à ajouter au cellier
+            Quantité de cette bouteille à ajouter au cellier "{cellar.name}"
           </DialogContentText>
           <input
             name="quantity"
@@ -283,7 +286,9 @@ function AddBottle() {
         <DialogContent>
           <BottleSmall bottle={insertedBottle} />
           <DialogContentText>
-            <strong>Confirmer l'ajout de cette bouteille au cellier?</strong>
+            <strong>
+              Confirmer l'ajout de cette bouteille au cellier "{cellar.name}"?
+            </strong>
           </DialogContentText>
           <DialogContentText className="quantity">
             <span>Quantité: {quantity ? quantity : null}</span>
@@ -352,8 +357,8 @@ function AddBottle() {
       <FormControl className="AddForm">
         <Select
           className="selectBar"
-          defaultValue={"default"}
-          label="Selectionnez un cellier"
+          defaultValue={cellar ? cellar : "default"}
+          label={cellar ? cellar.name : "Selectionnez un cellier"}
           name="moncellier"
           id="moncellier"
           variant="outlined"
@@ -365,14 +370,20 @@ function AddBottle() {
             disabled
             value={"default"}
           >
-            Sélectionner un cellier
+            Sélectionnez un cellier
           </MenuItem>
+          {cellar && (
+            <MenuItem variant="outlined" className="selectItem" value={cellar}>
+              {cellar.name}
+            </MenuItem>
+          )}
           {cellars.map((c) => {
-            return (
-              <MenuItem className="selectItem" key={c._id} value={c}>
-                {c.name}
-              </MenuItem>
-            );
+            if (cellar && cellar._id !== c._id)
+              return (
+                <MenuItem className="selectItem" key={c._id} value={c}>
+                  {c.name}
+                </MenuItem>
+              );
           })}
         </Select>
       </FormControl>
@@ -401,9 +412,8 @@ function AddBottle() {
             <Box>
               <Divider>Liste des Bouteilles</Divider>
               <List className="recherche">
-                {!carouselBottle ? (
-                  clonedBottles.length !== 0 ? (
-                    clonedBottles.map((bottle) => (
+                {clonedBottles.length !== 0
+                  ? clonedBottles.map((bottle) => (
                       <ListItem
                         divider
                         key={bottle._id}
@@ -412,8 +422,7 @@ function AddBottle() {
                         <BottleSmallCard {...bottle} quantity={quantity} />
                       </ListItem>
                     ))
-                  ) : (
-                    bottles.map((bottle) => (
+                  : bottles.map((bottle) => (
                       <ListItem
                         divider
                         key={bottle._id}
@@ -421,17 +430,7 @@ function AddBottle() {
                       >
                         <BottleSmallCard {...bottle} quantity={quantity} />
                       </ListItem>
-                    ))
-                  )
-                ) : (
-                  <ListItem
-                    divider
-                    key={carouselBottle._id}
-                    onClick={(e) => handleOpenQuantityDialog(carouselBottle)}
-                  >
-                    <BottleSmallCard {...carouselBottle} quantity={quantity} />
-                  </ListItem>
-                )}
+                    ))}
               </List>
             </Box>
           </Box>

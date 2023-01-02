@@ -9,7 +9,7 @@ import Dashboard from "./Dashboard";
 import Bottles from "./bottles/Bottles";
 import Users from "./users/Users";
 // Styles
-
+import "./AdminHome.scss";
 /**
  * AdminHome Component.
  * Renders a Admin component from react admin tool

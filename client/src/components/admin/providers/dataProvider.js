@@ -1,6 +1,6 @@
 import simpleRestProvider from "ra-data-simple-rest";
 import { fetchUtils } from "react-admin";
-const hostOriginURL = "http://localhost:3000";
+const hostOriginURL = window.location.origin;
 
 const httpClient = (url, options = {}) => {
   const admin = JSON.parse(localStorage.getItem("admin")) || null;
