@@ -43,9 +43,20 @@
 
 .backgroundA {
   position: absolute;
-  right: 6vw;
+  right: 1vw;
   max-height: 40vh;
-  fill: #c07a71;
+
+  & > .rouge {
+    fill: #6a3352;
+  }
+
+  & > .rose {
+    fill: #c07a71;
+  }
+
+  & > .blanc {
+    fill: #ffe599;
+  }
 }
 
 circle {
