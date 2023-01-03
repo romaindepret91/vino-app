@@ -242,7 +242,8 @@ function AddBottle() {
         <DialogTitle>Quantité souhaitée</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            Quantité de cette bouteille à ajouter au cellier "{cellar.name}"
+            Quantité de cette bouteille à ajouter au cellier "
+            {cellar && cellar.name}"
           </DialogContentText>
           <input
             name="quantity"
@@ -287,7 +288,8 @@ function AddBottle() {
           <BottleSmall bottle={insertedBottle} />
           <DialogContentText>
             <strong>
-              Confirmer l'ajout de cette bouteille au cellier "{cellar.name}"?
+              Confirmer l'ajout de cette bouteille au cellier "
+              {cellar && cellar.name}"?
             </strong>
           </DialogContentText>
           <DialogContentText className="quantity">
