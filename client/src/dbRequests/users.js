@@ -7,6 +7,7 @@ const hostOriginURL = window.location.origin;
  * @returns {Promise} Promise object represents the user logged in
  */
 export async function loggingIn(credentials) {
+  console.log(hostOriginURL);
   return await axios.post(`${hostOriginURL}/api/auth`, credentials);
 }
 

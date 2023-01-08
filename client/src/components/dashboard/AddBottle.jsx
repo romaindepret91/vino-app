@@ -111,7 +111,7 @@ function AddBottle() {
    * @returns {void}
    */
   const handleCloseQuantityDialog = (e, reason) => {
-    if (reason && reason == "backdropClick") return;
+    if (reason && reason === "backdropClick") return;
     setOpenQuantityDialog(false);
     setOpenConfirmDialog(true);
   };
@@ -123,7 +123,7 @@ function AddBottle() {
    * @returns {void}
    */
   const handleCloseConfirmDialog = (e, reason) => {
-    if (reason && reason == "backdropClick") return;
+    if (reason && reason === "backdropClick") return;
     setOpenConfirmDialog(false);
   };
 
@@ -134,7 +134,7 @@ function AddBottle() {
    * @returns {void}
    */
   const handleCloseNoCellarDialog = (e, reason) => {
-    if (reason && reason == "backdropClick") return;
+    if (reason && reason === "backdropClick") return;
     setOpenNoCellarDialog(false);
   };
 
@@ -145,7 +145,7 @@ function AddBottle() {
    * @returns {void}
    */
   const handleCloseSelectCellarDialog = (e, reason) => {
-    if (reason && reason == "backdropClick") return;
+    if (reason && reason === "backdropClick") return;
     setOpenSelectCellarDialog(false);
   };
 
@@ -166,7 +166,7 @@ function AddBottle() {
       const userId = user.user._id;
       getCellars(userId, user.access_token).then((cellars) => {
         setCellars(cellars.data);
-        if (cellars.data.length == 0) setOpenNoCellarDialog(true);
+        if (cellars.data.length === 0) setOpenNoCellarDialog(true);
       });
     }
   }, [user]);
@@ -386,6 +386,7 @@ function AddBottle() {
                   {c.name}
                 </MenuItem>
               );
+            return null;
           })}
         </Select>
       </FormControl>
